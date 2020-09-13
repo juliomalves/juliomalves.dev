@@ -5,6 +5,5 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 })
 
 module.exports = withPlugins([withImages, withBundleAnalyzer], {
-    compress: true,
     poweredByHeader: false
 })
