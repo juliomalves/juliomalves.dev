@@ -1,10 +1,10 @@
 import React from 'react'
 
-type Props = {
+interface DefaultSectionProps {
     id: string
 }
 
-const DefaultSection = ({ id }: Props): JSX.Element => (
+const DefaultSection = ({ id }: DefaultSectionProps) => (
     <section id={id} className="flex flex-col justify-center p-6">
         Default Section
     </section>

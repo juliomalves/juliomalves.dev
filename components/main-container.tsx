@@ -1,19 +1,21 @@
 import React from 'react'
-import DefaultSection from '@components/sections/default'
-import SummarySection from '@components/sections/summary'
+import DefaultSection from '@/components/sections/default'
+import SummarySection from '@/components/sections/summary'
 
-type Props = {
+interface MainContainerProps {
     content: string[]
 }
 
-const sectionsMap = {
+type Section = typeof DefaultSection | typeof SummarySection
+
+const sectionsMap: Record<string, Section> = {
     summary: SummarySection,
     default: DefaultSection
 }
 
-const MainContainer = ({ content }: Props): JSX.Element => {
+const MainContainer = ({ content }: MainContainerProps) => {
     const sections = content.map(
-        (item: string): JSX.Element => {
+        (item: string) => {
             const sectionId = item.toLowerCase()
             const DynamicSection = sectionsMap[sectionId] ?? sectionsMap.default
             return <DynamicSection key={sectionId} id={sectionId} />

@@ -1,16 +1,16 @@
 import React, { useState } from 'react'
-import NavItem from '@components/nav-item'
+import NavItem from '@/components/nav-item'
 
-type Props = {
+interface NavBarProps {
     image: string
     content: string[]
 }
 
-const NavBar = ({ image, content }: Props): JSX.Element => {
+const NavBar = ({ image, content }: NavBarProps) => {
     const [activeIndex, setActiveIndex] = useState(0)
-    const onNavItemClicked = (index): void => setActiveIndex(index)
+    const onNavItemClicked = (index: number): void => setActiveIndex(index)
     const navItems = content.map(
-        (item: string, index: number): JSX.Element => {
+        (item: string, index: number) => {
             const isActive = activeIndex === index
             const itemId = item.toLowerCase()
             return <NavItem label={item} key={itemId} index={index} active={isActive} onItemClick={onNavItemClicked} />

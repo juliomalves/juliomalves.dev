@@ -1,0 +1,24 @@
+@tailwind base;
+
+/* Custom base styles below */
+
+@tailwind components;
+
+/* Custom component styles below */
+
+@layer components {
+    .btn {
+        @apply font-bold py-2 px-4 rounded;
+    }
+
+    .btn-gray {
+        @apply bg-gray-400 text-gray-800;
+    }
+    .btn-gray:hover {
+        @apply bg-gray-500;
+    }
+}
+
+@tailwind utilities;
+
+/* Custom utilities styles below */
