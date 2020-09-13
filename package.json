@@ -20,14 +20,18 @@
     "format": "prettier --write \"**/*.{js,ts,tsx}\"",
     "lint": "eslint './**/*.{ts,tsx}'",
     "test": "jest",
-    "check": "npm run typecheck && npm run lint"
+    "check": "npm run typecheck && npm run lint",
+    "analyze": "ANALYZE_BUNDLE=true npm run build"
   },
   "dependencies": {
     "next": "~9.5.3",
+    "next-compose-plugins": "~2.2.0",
+    "next-images": "~1.4.1",
     "react": "~16.13.1",
     "react-dom": "~16.13.1"
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "~9.5.3",
     "@testing-library/react": "~11.0.2",
     "@types/jest": "~26.0.13",
     "@types/node": "~14.10.1",
