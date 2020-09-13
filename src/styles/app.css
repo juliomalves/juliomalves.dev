@@ -2,14 +2,10 @@
 
 /* Custom base styles below */
 
-/* Start purging... */
 @tailwind components;
-/* Stop purging. */
 
 /* Custom component styles below */
 
-/* Start purging... */
 @tailwind utilities;
-/* Stop purging. */
 
 /* Custom utilities styles below */
