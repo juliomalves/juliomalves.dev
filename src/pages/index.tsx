@@ -1,8 +1,14 @@
 import React from 'react'
+import NavBar from '@components/nav-bar'
+import MainContainer from '@components/main-container'
+import profileImg from '@assets/images/profile-pic.jpg'
+
+const contentList = ['Summary', 'Experience', 'Education', 'Skills', 'Projects', 'Contact']
 
 const Home = (): JSX.Element => (
-    <div className="py-20">
-        <h1 className="text-5xl text-center text-accent-1">Next.js + TypeScript + TailwindCSS</h1>
+    <div className="flex flex-col items-start">
+        <NavBar content={contentList} image={profileImg} />
+        <MainContainer content={contentList} />
     </div>
 )
 
