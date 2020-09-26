@@ -1,23 +1,15 @@
 import React from 'react'
+import Link from 'next/link'
 
 interface NavItemProps {
     label: string
-    index: number
-    active: boolean
-    onItemClick: (i: number) => void
+    href: string
 }
 
-const NavItem = ({ label, index, active, onItemClick }: NavItemProps) => {
-    const href = `#${label.toLowerCase()}`
-    const onItemClicked = () => onItemClick(index)
-
-    return (
-        <div className={active ? 'active' : ''}>
-            <a href={href} onClick={onItemClicked}>
-                {label}
-            </a>
-        </div>
-    )
-}
+const NavItem = ({ label, href }: NavItemProps) => (
+    <Link href={href}>
+        <a className="p-4 rounded transition-all duration-200 hover:bg-gray-200">{label}</a>
+    </Link>
+)
 
 export default NavItem
