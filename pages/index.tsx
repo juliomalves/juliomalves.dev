@@ -1,13 +1,10 @@
 import React from 'react'
-import MainContainer from '@/components/main-container'
-import profileImg from '@/assets/images/profile-pic.jpg'
-
-const contentList = ['Summary', 'Experience', 'Education', 'Skills', 'Projects', 'Contact']
+import SummarySection from '@/components/sections/summary'
 
 const Home = () => (
-    <div className="flex flex-col items-start">
-        <MainContainer content={contentList} />
-    </div>
+    <main className="flex flex-col items-center p-4 divide-y divide-gray-400 text-black bg-white">
+        <SummarySection />
+    </main>
 )
 
 export default Home
