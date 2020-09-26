@@ -15,13 +15,13 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:analyze": "ANALYZE_BUNDLE=true npm run build",
     "start": "next start",
     "typecheck": "tsc --pretty --noEmit",
     "format": "prettier --write \"**/*.{js,ts,tsx}\"",
     "lint": "eslint './**/*.{ts,tsx}'",
     "test": "jest",
-    "check": "npm run typecheck && npm run lint",
-    "analyze": "ANALYZE_BUNDLE=true npm run build"
+    "check": "npm run typecheck && npm run lint"
   },
   "dependencies": {
     "next": "~9.5.3",

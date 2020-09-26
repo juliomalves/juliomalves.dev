@@ -2,6 +2,12 @@
 
 /* Custom base styles below */
 
+@layer base {
+    html {
+        @apply antialiased;
+    }
+}
+
 @tailwind components;
 
 /* Custom component styles below */
