@@ -12,7 +12,7 @@ const Header = () => (
                 <span className="pl-2 text-xl font-semibold">juliomalves.dev</span>
             </a>
         </Link>
-        <nav className="flex flex-row hidden sm:block">
+        <nav className="flex flex-row hidden md:block">
             <NavItem label="Home" href="/" key="home" />
             <NavItem label="Projects" href="#projects" key="projects" />
             <NavItem label="Contact" href="#contact" key="contact" />

@@ -8,7 +8,7 @@ interface NavItemProps {
 
 const NavItem = ({ label, href }: NavItemProps) => (
     <Link href={href}>
-        <a className="p-4 rounded transition-all duration-200 hover:bg-gray-200">{label}</a>
+        <a className="p-1 md:p-4 rounded transition-all duration-200 hover:bg-gray-200 dark:hover:bg-gray-800">{label}</a>
     </Link>
 )
 

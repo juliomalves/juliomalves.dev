@@ -7,7 +7,10 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                'accent-1': '#666'
+                midnight: '#171923'
+            },
+            screens: {
+                dark: { raw: '(prefers-color-scheme: dark)' }
             }
         },
         opacity: {
@@ -25,5 +28,26 @@ module.exports = {
         }
     },
     variants: {},
-    plugins: []
+    plugins: [
+        ({ addBase, config }) => {
+            addBase({
+                body: {
+                    color: config('theme.colors.midnight'),
+                    backgroundColor: config('theme.colors.white')
+                },
+                p: {
+                    color: config('theme.colors.gray.800')
+                },
+                '@screen dark': {
+                    body: {
+                        color: config('theme.colors.gray.100'),
+                        backgroundColor: config('theme.colors.midnight')
+                    },
+                    p: {
+                        color: config('theme.colors.gray.500')
+                    }
+                }
+            })
+        }
+    ]
 }
