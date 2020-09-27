@@ -23,6 +23,11 @@
     "test": "jest",
     "check": "npm run typecheck && npm run lint"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run check"
+    }
+  },
   "dependencies": {
     "@mdx-js/loader": "~1.6.18",
     "@next/mdx": "~9.5.3",
