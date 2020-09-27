@@ -7,14 +7,9 @@ class MyDocument extends Document {
             <Html lang="en">
                 <Head>
                     <link rel="shortcut icon" href="favicon.ico" />
-                    <link rel="apple-touch-icon" href="/news/apple-touch-icon.png" />
-                    <link
-                        rel="preload"
-                        href="https://fonts.googleapis.com/css?family=Roboto+Condensed"
-                        as="font"
-                        type="font/woff"
-                        crossOrigin="anonymous"
-                    />
+                    <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180" />
+                    <link rel="icon" href="favicon-16x16.png" sizes="16x16" type="image/png" />
+                    <link rel="icon" href="favicon-32x32.png" sizes="32x32" type="image/png" />
                 </Head>
                 <body>
                     <Main />
