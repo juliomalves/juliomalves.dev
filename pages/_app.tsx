@@ -2,6 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import { AppProps } from 'next/app'
 import Header from '@/components/header'
+import Footer from '@/components/footer'
 
 import '@/styles/app.css'
 
@@ -13,6 +14,7 @@ const App = ({ Component, pageProps }: AppProps) => {
             </Head>
             <Header />
             <Component {...pageProps} />
+            <Footer />
         </>
     )
 }

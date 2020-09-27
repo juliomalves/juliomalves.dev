@@ -18,6 +18,9 @@
     p {
         @apply mb-4
     }
+    a {
+        @apply transition-all duration-200
+    }
 }
 
 @tailwind components;

@@ -7,7 +7,7 @@ import profileImg from '@/assets/images/profile-pic.jpg'
 const Header = () => (
     <header className="sticky top-0 flex flex-row justify-between items-center w-full max-w-3xl mx-auto px-6 lg:px-0 py-4 lg:my-4 bg-white dark:bg-midnight">
         <Link href="/">
-            <a className="flex flex-row items-center hover:opacity-80">
+            <a className="flex flex-row items-center text-gray-800 dark:text-gray-500 hover:text-gray-300">
                 <img alt="Julio Alves" className="w-12 md:w-16 h-auto rounded-full" src={profileImg} />
                 <span className="pl-2 text-xl font-semibold">juliomalves.dev</span>
             </a>
