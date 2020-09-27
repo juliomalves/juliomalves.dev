@@ -4,24 +4,20 @@ import NavItem from '@/components/nav-item'
 
 import profileImg from '@/assets/images/profile-pic.jpg'
 
-const navContent = ['Home', 'Projects', 'Contact']
-
-const Header = () => {
-    const navItems = navContent.map((item: string) => {
-        const itemId = item.toLowerCase()
-        return <NavItem label={item} href={`#${itemId}`} key={itemId} />
-    })
-
-    return (
-        <header className="sticky top-0 flex flex-row justify-between items-center w-full max-w-3xl mx-auto my-4 p-4 bg-white text-black">
-            <Link href="">
-                <a className="hover:opacity-80">
-                    <img alt="Julio Alves profile image" className="w-24 h-auto rounded-full" src={profileImg} />
-                </a>
-            </Link>
-            <nav className="flex flex-row">{navItems}</nav>
-        </header>
-    )
-}
+const Header = () => (
+    <header className="sticky top-0 flex flex-row justify-between items-center w-full max-w-3xl mx-auto px-6 lg:px-0 py-4 lg:my-4 bg-white dark:bg-midnight">
+        <Link href="/">
+            <a className="flex flex-row items-center hover:opacity-80">
+                <img alt="Julio Alves" className="w-12 md:w-16 h-auto rounded-full" src={profileImg} />
+                <span className="pl-2 text-xl font-semibold">juliomalves.dev</span>
+            </a>
+        </Link>
+        <nav className="flex flex-row hidden sm:block">
+            <NavItem label="Home" href="/" key="home" />
+            <NavItem label="Projects" href="#projects" key="projects" />
+            <NavItem label="Contact" href="#contact" key="contact" />
+        </nav>
+    </header>
+)
 
 export default Header

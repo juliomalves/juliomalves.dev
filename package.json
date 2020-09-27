@@ -24,6 +24,8 @@
     "check": "npm run typecheck && npm run lint"
   },
   "dependencies": {
+    "@mdx-js/loader": "~1.6.18",
+    "@next/mdx": "~9.5.3",
     "next": "~9.5.3",
     "next-compose-plugins": "~2.2.0",
     "next-images": "~1.4.1",

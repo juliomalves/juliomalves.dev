@@ -12,3 +12,8 @@ declare module '*.jpg' {
     const content: string
     export default content
 }
+
+declare module '*.mdx' {
+    const MDXComponent: (props: any) => JSX.Element
+    export default MDXComponent
+  }
