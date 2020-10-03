@@ -1,20 +1,31 @@
 import React from 'react'
 
-import TwitterLogo from '@/assets/svg/twitter.svg'
-import GithubLogo from '@/assets/svg/github.svg'
-import LinkedInLogo from '@/assets/svg/linkedin.svg'
+import TwitterLogo from '@/assets/svg/twitter-logo.svg'
+import GithubLogo from '@/assets/svg/github-logo.svg'
+import LinkedInLogo from '@/assets/svg/linkedin-logo.svg'
+
+interface FooterLinkProps {
+    children: React.ReactNode
+    href: string
+}
+
+const FooterLink = ({ children, href }: FooterLinkProps) => (
+    <a className="p-4 text-gray-800 dark:text-gray-500 hover:text-gray-300" href={href}>
+        {children}
+    </a>
+)
 
 const Footer = () => (
     <footer className="flex flex-row justify-center items-center w-full max-w-3xl mx-auto px-6 lg:px-0 py-4 lg:my-4">
-        <a className="p-4 text-gray-800 dark:text-gray-500 hover:text-gray-300" href="https://www.twitter.com/juli0malves">
+        <FooterLink href="https://www.twitter.com/juli0malves">
             <TwitterLogo />
-        </a>
-        <a className="p-4 text-gray-800 dark:text-gray-500 hover:text-gray-300" href="https://www.github.com/juliomalves">
+        </FooterLink>
+        <FooterLink href="https://www.github.com/juliomalves">
             <GithubLogo />
-        </a>
-        <a className="p-4 text-gray-800 dark:text-gray-500 hover:text-gray-300" href="https://www.linkedin.com/in/juliomalves">
+        </FooterLink>
+        <FooterLink href="https://www.linkedin.com/in/juliomalves">
             <LinkedInLogo />
-        </a>
+        </FooterLink>
     </footer>
 )
 

@@ -1,5 +1,4 @@
 import React from 'react'
-import Head from 'next/head'
 import { AppProps } from 'next/app'
 import Metadata from '@/components/metadata'
 import Header from '@/components/header'
