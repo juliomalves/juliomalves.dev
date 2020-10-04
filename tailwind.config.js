@@ -3,7 +3,12 @@ module.exports = {
         purgeLayersByDefault: true,
         removeDeprecatedGapUtilities: true
     },
-    purge: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}'],
+    purge: {
+        content: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}', './assets/svg/*.svg'],
+        options: {
+            whitelist: ['dark-mode', 'light-mode']
+        }
+    },
     theme: {
         darkSelector: '.dark-mode',
         extend: {
