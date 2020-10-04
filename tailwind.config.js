@@ -5,13 +5,18 @@ module.exports = {
     },
     purge: ['./src/components/**/*.{js,ts,jsx,tsx}', './src/pages/**/*.{js,ts,jsx,tsx}'],
     theme: {
+        darkSelector: '.dark-mode',
         extend: {
             colors: {
                 midnight: '#171923'
-            },
-            screens: {
-                dark: { raw: '(prefers-color-scheme: dark)' }
             }
+        },
+        screens: {
+            xs: '420px',
+            sm: '640px',
+            md: '768px',
+            lg: '1024px',
+            xl: '1280px'
         },
         opacity: {
             0: '0',
@@ -27,7 +32,11 @@ module.exports = {
             100: '1'
         }
     },
-    variants: {},
+    variants: {
+        backgroundColor: ['dark', 'dark-hover', 'responsive', 'hover', 'focus'],
+        borderColor: ['dark', 'dark-hover', 'responsive', 'hover', 'focus'],
+        textColor: ['dark', 'dark-hover', 'responsive', 'hover', 'focus']
+    },
     plugins: [
         ({ addBase, config }) => {
             addBase({
@@ -38,7 +47,7 @@ module.exports = {
                 p: {
                     color: config('theme.colors.gray.800')
                 },
-                '@screen dark': {
+                '.dark-mode': {
                     body: {
                         color: config('theme.colors.gray.100'),
                         backgroundColor: config('theme.colors.midnight')
@@ -48,6 +57,7 @@ module.exports = {
                     }
                 }
             })
-        }
+        },
+        require('tailwindcss-dark-mode')()
     ]
 }

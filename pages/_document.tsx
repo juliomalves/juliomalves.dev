@@ -12,6 +12,7 @@ class MyDocument extends Document {
                     <link rel="icon" href="favicon-32x32.png" sizes="32x32" type="image/png" />
                 </Head>
                 <body>
+                    <script src="toggle-theme.js" />
                     <Main />
                     <NextScript />
                 </body>

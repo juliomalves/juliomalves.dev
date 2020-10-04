@@ -10,7 +10,7 @@ interface FooterLinkProps {
 }
 
 const FooterLink = ({ children, href }: FooterLinkProps) => (
-    <a className="p-4 text-gray-800 dark:text-gray-500 hover:text-gray-300" href={href}>
+    <a className="p-4 text-gray-800 hover:text-gray-400 dark:text-gray-500 dark-hover:text-gray-200" href={href}>
         {children}
     </a>
 )
