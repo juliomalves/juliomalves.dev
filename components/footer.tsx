@@ -9,24 +9,31 @@ interface FooterLinkProps {
     href: string
 }
 
-const FooterLink = ({ children, href }: FooterLinkProps) => (
-    <a className="p-4 text-gray-800 hover:text-gray-400 dark:text-gray-500 dark-hover:text-gray-200" href={href}>
-        {children}
-    </a>
+const FooterLisItem = ({ children, href }: FooterLinkProps) => (
+    <li className="p-4 text-gray-800 hover:text-gray-400 dark:text-gray-500 dark-hover:text-gray-200">
+        <a href={href}>{children}</a>
+    </li>
 )
 
-const Footer = () => (
-    <footer className="flex flex-row justify-center items-center w-full max-w-3xl mx-auto px-6 lg:px-0 py-4 lg:my-4">
-        <FooterLink href="https://www.twitter.com/juli0malves">
-            <TwitterLogo />
-        </FooterLink>
-        <FooterLink href="https://www.github.com/juliomalves">
-            <GithubLogo />
-        </FooterLink>
-        <FooterLink href="https://www.linkedin.com/in/juliomalves">
-            <LinkedInLogo />
-        </FooterLink>
-    </footer>
-)
+const Footer = () => {
+    const currentYear = new Date().getFullYear()
+
+    return (
+        <footer className="flex flex-col justify-center items-center w-full max-w-3xl mx-auto px-6 lg:px-0 py-4 lg:my-4">
+            <ul className="flex items-center">
+                <FooterLisItem href="https://www.twitter.com/juli0malves">
+                    <TwitterLogo />
+                </FooterLisItem>
+                <FooterLisItem href="https://www.github.com/juliomalves">
+                    <GithubLogo />
+                </FooterLisItem>
+                <FooterLisItem href="https://www.linkedin.com/in/juliomalves">
+                    <LinkedInLogo />
+                </FooterLisItem>
+            </ul>
+            <p className="text-center text-sm">©{currentYear} Julio Alves. All rights reserved.</p>
+        </footer>
+    )
+}
 
 export default Footer
