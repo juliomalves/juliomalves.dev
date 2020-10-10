@@ -1,14 +1,17 @@
 import React from 'react'
 import useDarkMode from '@/components/use-dark-mode'
 
+import MoonIcon from '@/assets/svg/moon-icon.svg'
+import SunIcon from '@/assets/svg/sun-icon.svg'
+
 const ThemeToggleButton = () => {
     const [mode, setMode] = useDarkMode({ storageKey: 'jma-theme' })
 
-    const toggle = () => setMode(mode === 'dark' ? 'light' : 'dark')
+    const toggleMode = () => setMode(mode === 'dark' ? 'light' : 'dark')
 
     return (
-        <button className="font-bold py-2 px-4 border-2 border-midnight dark:border-gray-100 rounded hover:bg-gray-200 dark-hover:bg-gray-800" onClick={toggle}>
-            {value ? 'Light' : 'Dark'}
+        <button className="p-4 transition-colors duration-300 ease-in-out focus:outline-none" onClick={toggleMode}>
+            {mode === 'dark' ? <SunIcon /> : <MoonIcon />}
         </button>
     )
 }
