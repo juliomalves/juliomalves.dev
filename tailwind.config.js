@@ -45,13 +45,6 @@ module.exports = {
     plugins: [
         ({ addBase, config }) => {
             addBase({
-                body: {
-                    color: config('theme.colors.midnight'),
-                    backgroundColor: config('theme.colors.white')
-                },
-                p: {
-                    color: config('theme.colors.gray.800')
-                },
                 '.dark-mode': {
                     body: {
                         color: config('theme.colors.gray.100'),

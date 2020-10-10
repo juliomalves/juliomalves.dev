@@ -6,7 +6,7 @@ interface SectionProps {
 }
 
 const Section = ({ id, children }: SectionProps) => (
-    <section id={id} className="flex flex-col justify-center max-w-3xl py-4">
+    <section id={id} className="flex flex-col p-4 sm:px-8">
         {children}
     </section>
 )
