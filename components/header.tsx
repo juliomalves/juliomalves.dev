@@ -10,7 +10,7 @@ const ThemeToggleButton = dynamic(() => import('@/components/theme-toggle-button
 })
 
 const Header = () => (
-    <header className="sticky top-0 flex flex-row justify-between items-center w-full max-w-3xl mx-auto px-6 lg:px-0 py-4 lg:my-4 bg-white dark:bg-midnight">
+    <header className="sticky top-0 flex flex-row justify-between items-center w-full max-w-3xl mx-auto px-4 sm:px-8 py-4 bg-white dark:bg-midnight transition-bg-color duration-300 ease-in-out">
         <Link href="/">
             <a className="flex flex-row items-center">
                 <img alt="Julio Alves" className="w-12 md:w-16 h-auto rounded-full" src={profileImg} />

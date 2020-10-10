@@ -14,6 +14,9 @@ module.exports = {
         extend: {
             colors: {
                 midnight: '#171923'
+            },
+            transitionProperty: {
+                'bg-color': 'background-color'
             }
         },
         screens: {

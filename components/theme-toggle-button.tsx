@@ -9,7 +9,7 @@ const ThemeToggleButton = () => {
 
     return (
         <button className="font-bold py-2 px-4 border-2 border-midnight dark:border-gray-100 rounded hover:bg-gray-200 dark-hover:bg-gray-800" onClick={toggle}>
-            {value ? 'Light Mode' : 'Dark Mode'}
+            {value ? 'Light' : 'Dark'}
         </button>
     )
 }
