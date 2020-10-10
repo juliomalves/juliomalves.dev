@@ -1,7 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
 
-const title = 'Julio Alves | Software engineer'
+const authorName = 'Julio Alves'
+const title = `${authorName} | Software engineer`
 const description = 'Frontend developer experienced in building web-based applications for all kinds of devices.'
 const canonicalUrl = 'https://juliomalves.dev'
 const twitterHandle = '@juli0malves'
@@ -10,6 +11,7 @@ const Metadata = () => (
     <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>{title}</title>
+        <meta name="author" content={authorName} />
         <meta name="description" content={description} />
         <link rel="canonical" href={canonicalUrl} />
         <meta property="og:type" content="website" />
@@ -21,6 +23,7 @@ const Metadata = () => (
         <meta property="og:image:height" content="720" />
         <meta property="og:image:alt" content={title} />
         <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:site_name" content={`${authorName} Website`} />
         <meta name="twitter:site" content={twitterHandle} />
         <meta name="twitter:creator" content={twitterHandle} />
         <meta name="twitter:card" content="summary_large_image" />

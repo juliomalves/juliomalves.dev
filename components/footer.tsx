@@ -31,7 +31,7 @@ const Footer = () => {
                     <LinkedInLogo />
                 </FooterLisItem>
             </ul>
-            <p className="text-center text-sm">©{currentYear} Julio Alves. All rights reserved.</p>
+            <p className="text-center text-sm">Julio Alves © {currentYear}</p>
         </footer>
     )
 }
