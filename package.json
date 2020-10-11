@@ -30,10 +30,10 @@
   },
   "dependencies": {
     "@mdx-js/loader": "~1.6.18",
-    "@next/mdx": "~9.5.3",
-    "next": "~9.5.3",
+    "@next/mdx": "~9.5.5",
+    "next": "~9.5.5",
     "next-compose-plugins": "~2.2.0",
-    "next-images": "~1.4.1",
+    "next-images": "~1.6.0",
     "next-react-svg": "~1.1.2",
     "react": "~16.13.1",
     "react-dom": "~16.13.1"
