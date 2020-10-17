@@ -20,7 +20,10 @@ module.exports = {
                 sans: ['Lato', ...defaultTheme.fontFamily.sans]
             },
             colors: {
-                midnight: '#171923'
+                midnight: '#070919'
+            },
+            zIndex: {
+                '-1': '-1'
             }
         },
         screens: {

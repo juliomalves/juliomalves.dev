@@ -1,12 +1,36 @@
 import SkillList from '@/components/skill-list'
+import TimelineItem, { TimelineItemType } from '@/components/timeline-item'
 
 # Hello, I'm <span className="inline-block">Julio Alves</span>
 
-I'm a software engineer experienced in building web-based applications for all kinds of devices. I'm based in London, UK where I work at ITV as a Senior Frontend Engineer.
+I'm a <strong>software engineer</strong> experienced in building web apps for all kinds of devices. I'm based in London, UK where I work as a Senior Front-end Engineer at ITV.
+
+My focus right now is <strong>React.js</strong> (Next.js + TypeScript), but I also have experience with Roku/BrightScript development.
 
 
-## Skills
+## Tech Skills
 
-These are the technologies and tools I'm proficient at and comfortable with:
+Here are some of the technologies and tools I'm proficient and comfortable with:
 
 <SkillList />
+
+
+## Timeline
+
+<ul>
+    <TimelineItem type={TimelineItemType.Work} date="2019-09-25" title="Joined ITV">
+        <p>Got offered and accepted a senior position at ITV. Currently building React websites and a React Native app.</p>
+    </TimelineItem>
+    <TimelineItem type={TimelineItemType.Work} date="2017-01-05" title="Joined Accedo.tv">
+        <p>Started at Accedo.tv where I contributed to several Node.js microservices and CTV app. Around the same time, decided to move closer to Central London, reducing my commute time by over 2 hours a day!</p>
+    </TimelineItem>
+    <TimelineItem type={TimelineItemType.Work} date="2015-09-25" title="Joined TV App Agency">
+        <p>Managed to land my first job at TV App Agency, building apps for TVs and set-top boxes. Got to learn the niche programming language <em>BrightScript</em> along the way!</p>
+    </TimelineItem>
+    <TimelineItem type={TimelineItemType.Travel} date="2015-06-25" title="Moved to the UK">
+        <p>Decided to move to London to look for my first real professional experience. BIGGER, <strong>bolder</strong> and way busier (in a good way!) than what I was accustomed to.</p>
+    </TimelineItem>
+    <TimelineItem type={TimelineItemType.Education} date="2015-01-15" title="Graduated from university">
+        <p>Completed my master's degree in Software Enginering! Spent a few months working on research projects at my uni afterwards, where I delved into MATLAB for a bit.</p>
+    </TimelineItem>
+</ul>

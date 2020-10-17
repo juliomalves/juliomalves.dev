@@ -45,4 +45,12 @@
     .grid-wrapper > * {
         grid-column: 2;
     }
+    .timeline::before {
+        background-color: currentColor;
+        content: "";
+        height: 100%;
+        width: 2px;
+        position: absolute;
+        left: 0.45em;
+    }
 }
