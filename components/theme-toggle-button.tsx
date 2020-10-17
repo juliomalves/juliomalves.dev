@@ -9,7 +9,7 @@ const ThemeToggleButton = () => {
     const toggleMode = () => setDarkMode(!isDarkMode)
 
     return (
-        <button className="p-4 transition-colors duration-300 ease-in-out focus:outline-none" onClick={toggleMode}>
+        <button className="p-4 text-blue-300 dark:text-orange-300 transition-colors duration-300 ease-in-out focus:outline-none" onClick={toggleMode}>
             {isDarkMode ? <SunIcon /> : <MoonIcon />}
         </button>
     )
