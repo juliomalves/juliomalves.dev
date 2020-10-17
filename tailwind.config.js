@@ -1,7 +1,9 @@
 module.exports = {
     future: {
+        defaultLineHeights: true,
         purgeLayersByDefault: true,
-        removeDeprecatedGapUtilities: true
+        removeDeprecatedGapUtilities: true,
+        standardFontWeights: true
     },
     purge: {
         content: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}', './assets/svg/*.svg'],
