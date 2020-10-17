@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
     future: {
         defaultLineHeights: true,
@@ -14,6 +16,9 @@ module.exports = {
     theme: {
         darkSelector: '.dark-mode',
         extend: {
+            fontFamily: {
+                sans: ['Lato', ...defaultTheme.fontFamily.sans]
+            },
             colors: {
                 midnight: '#171923'
             }
