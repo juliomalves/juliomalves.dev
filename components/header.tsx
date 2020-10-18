@@ -13,7 +13,7 @@ const Header = () => {
             <Link href="/" className="flex flex-row items-center">
                 <img
                     alt="Julio Alves"
-                    className="w-12 md:w-16 h-auto border-2 border-neon-blue dark:border-cerise rounded-full"
+                    className="w-12 h-auto border-2 border-neon-blue dark:border-cerise rounded-full"
                     src={profileImg}
                 />
                 <span className="pl-3 text-neon-blue dark:text-cerise text-xl font-semibold">juliomalves.dev</span>

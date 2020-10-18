@@ -29,12 +29,12 @@ const SkillList = () => (
         <SkillListItem label="TypeScript" Icon={TypeScriptLogo} />
         <SkillListItem label="React.js" Icon={ReactLogo} />
         <SkillListItem label="Next.js" Icon={NextJSLogo} />
-        <SkillListItem label="Git" Icon={GitLogo} />
+        <SkillListItem label="Node.js" Icon={NodeJSLogo} />
         <SkillListItem label="HTML" Icon={HTML5Logo} />
         <SkillListItem label="CSS" Icon={CSS3Logo} />
         <SkillListItem label="Sass" Icon={SassLogo} />
-        <SkillListItem label="Node.js" Icon={NodeJSLogo} />
         <SkillListItem label="BrightScript" Icon={RokuLogo} />
+        <SkillListItem label="Git" Icon={GitLogo} />
     </ul>
 )
 
