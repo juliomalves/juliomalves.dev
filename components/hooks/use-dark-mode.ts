@@ -16,8 +16,8 @@ export const useDarkMode = ({ darkModeClass = 'dark-mode', lightModeClass = 'lig
     useEffect(() => {
         const mediaQuery = window.matchMedia(preferDarkQuery)
         const handleChange = () => setDarkMode(mediaQuery.matches)
-        mediaQuery.addEventListener('change', handleChange)
-        return () => mediaQuery.removeEventListener('change', handleChange)
+        mediaQuery.addListener(handleChange)
+        return () => mediaQuery.removeListener(handleChange)
     }, [])
 
     useEffect(() => {
