@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from '@/components/link'
 
 import TwitterLogo from '@/assets/svg/twitter-logo.svg'
 import GithubLogo from '@/assets/svg/github-logo.svg'
@@ -7,11 +8,14 @@ import LinkedInLogo from '@/assets/svg/linkedin-logo.svg'
 interface FooterLinkProps {
     children: React.ReactNode
     href: string
+    label: string
 }
 
-const FooterLisItem = ({ children, href }: FooterLinkProps) => (
-    <li className="p-4 text-gray-800 hover:text-gray-400 dark:text-gray-500 dark-hover:text-gray-200">
-        <a href={href}>{children}</a>
+const FooterLisItem = ({ children, href, label }: FooterLinkProps) => (
+    <li className="p-4">
+        <Link href={href} className="text-gray-800 hover:text-neon-blue dark:text-gray-500 dark-hover:text-cerise" label={label} external>
+            {children}
+        </Link>
     </li>
 )
 
@@ -21,13 +25,13 @@ const Footer = () => {
     return (
         <footer className="flex flex-col justify-center items-center w-full max-w-3xl mx-auto px-6 lg:px-0 py-4 lg:my-4">
             <ul className="flex items-center">
-                <FooterLisItem href="https://www.twitter.com/juli0malves">
+                <FooterLisItem href="https://www.twitter.com/juli0malves" label="Twitter">
                     <TwitterLogo />
                 </FooterLisItem>
-                <FooterLisItem href="https://www.github.com/juliomalves">
+                <FooterLisItem href="https://www.github.com/juliomalves" label="GitHub">
                     <GithubLogo />
                 </FooterLisItem>
-                <FooterLisItem href="https://www.linkedin.com/in/juliomalves">
+                <FooterLisItem href="https://www.linkedin.com/in/juliomalves" label="LinkedIn">
                     <LinkedInLogo />
                 </FooterLisItem>
             </ul>

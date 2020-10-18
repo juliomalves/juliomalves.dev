@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'next/link'
+import Link from '@/components/link'
 
 interface NavItemProps {
     label: string
@@ -7,8 +7,8 @@ interface NavItemProps {
 }
 
 const NavItem = ({ label, href }: NavItemProps) => (
-    <Link href={href}>
-        <a className="p-1 md:p-4 rounded hover:bg-gray-200 dark:hover:bg-gray-800">{label}</a>
+    <Link href={href} className="p-1 md:p-4 rounded hover:bg-gray-200 dark:hover:bg-gray-800">
+        {label}
     </Link>
 )
 
