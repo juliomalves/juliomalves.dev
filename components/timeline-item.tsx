@@ -26,15 +26,15 @@ const TimelineItem = ({ children, date, title, type }: ITimelineItem) => {
     const symbol = typeToSymbol[type]
 
     return (
-        <li className="flex flex-col my-2">
-            <div className="flex items-center">
-                <div className="border-2 rounded-full border-current w-4 h-4"></div>
-                <time className="font-semibold px-4" dateTime={date}>
+        <li className="flex flex-col">
+            <div className="flex items-center py-2">
+                <div className="border-2 rounded-full border-neon-blue dark:border-cerise w-4 h-4"></div>
+                <time className="text-lg font-semibold px-4" dateTime={date}>
                     {dateString}
                 </time>
             </div>
-            <div className="flex flex-col pl-8 mt-2 relative timeline -z-1">
-                <h3>
+            <div className="flex flex-col pl-8 relative text-gray-800 dark:text-gray-500 timeline -z-1">
+                <h3 className="text-text-midnight dark:text-gray-100">
                     {title} {<Emoji label={type} symbol={symbol} />}
                 </h3>
                 {children}

@@ -7,9 +7,14 @@ import SunIcon from '@/assets/svg/sun-icon.svg'
 const ThemeToggleButton = () => {
     const [isDarkMode, setDarkMode] = useDarkMode({ storageKey: 'jma-theme' })
     const toggleMode = () => setDarkMode(!isDarkMode)
+    const label = isDarkMode ? 'Light mode' : 'Dark mode'
 
     return (
-        <button className="p-4 text-blue-300 dark:text-orange-300 transition-colors duration-300 ease-in-out focus:outline-none" onClick={toggleMode}>
+        <button
+            className="p-4 text-blue-300 dark:text-yellow-500 transition-colors duration-300 ease-in-out focus:outline-none"
+            onClick={toggleMode}
+            aria-label={label}
+        >
             {isDarkMode ? <SunIcon /> : <MoonIcon />}
         </button>
     )

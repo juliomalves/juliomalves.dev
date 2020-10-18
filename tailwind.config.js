@@ -20,7 +20,9 @@ module.exports = {
                 sans: ['Lato', ...defaultTheme.fontFamily.sans]
             },
             colors: {
-                midnight: '#070919'
+                midnight: '#070919',
+                'neon-blue': '#5C61FF',
+                cerise: '#E4267B'
             },
             zIndex: {
                 '-1': '-1'
