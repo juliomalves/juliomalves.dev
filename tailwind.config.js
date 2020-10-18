@@ -63,7 +63,13 @@ module.exports = {
                         backgroundColor: config('theme.colors.midnight')
                     },
                     p: {
-                        color: config('theme.colors.gray.500')
+                        color: config('theme.colors.gray.500'),
+                        a: {
+                            borderColor: config('theme.colors.cerise')
+                        },
+                        'a:hover': {
+                            color: config('theme.colors.cerise')
+                        }
                     }
                 }
             })

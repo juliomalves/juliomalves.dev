@@ -24,6 +24,12 @@
     a {
         @apply transition-all duration-200;
     }
+    p a {
+        @apply no-underline border-b-2 border-neon-blue font-semibold;
+    }
+    p a:hover {
+        @apply text-neon-blue;
+    }
     ::selection {
         @apply text-gray-100 bg-gray-500;
     }
