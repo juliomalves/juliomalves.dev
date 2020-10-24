@@ -2,7 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 
 const authorName = 'Julio Alves'
-const title = `${authorName} | Software engineer`
+const title = `${authorName} | Software Engineer`
 const description = 'Frontend developer experienced in building web-based applications for all kinds of devices.'
 const canonicalUrl = 'https://juliomalves.dev'
 const twitterHandle = '@juli0malves'

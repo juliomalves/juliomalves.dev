@@ -24,7 +24,7 @@ const SkillListItem = ({ label, Icon }: SkillListItemProps) => (
 )
 
 const SkillList = () => (
-    <ul className="grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4 md:grid-cols-5">
+    <ul className="grid grid-cols-3 xs:grid-cols-4 sm:grid-cols-4 md:grid-cols-5">
         <SkillListItem label="JavaScript" Icon={JavaScriptLogo} />
         <SkillListItem label="TypeScript" Icon={TypeScriptLogo} />
         <SkillListItem label="React.js" Icon={ReactLogo} />
