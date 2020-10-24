@@ -3,6 +3,8 @@ import Document, { Html, Head, Main, NextScript } from 'next/document'
 
 class MyDocument extends Document {
     render() {
+        const isProduction = process.env.NODE_ENV === 'production'
+
         return (
             <Html lang="en">
                 <Head>
@@ -14,6 +16,23 @@ class MyDocument extends Document {
                         rel="stylesheet"
                         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"
                     />
+                    {isProduction && (
+                        <>
+                            <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_ANALYTICS_ID}`} />
+                            <script
+                                dangerouslySetInnerHTML={{
+                                    __html: `
+                                        window.dataLayer = window.dataLayer || [];
+                                        function gtag(){ dataLayer.push(arguments); }
+                                        gtag('js', new Date());
+                                        gtag('config', '${process.env.NEXT_PUBLIC_ANALYTICS_ID}', {
+                                            page_path: window.location.pathname,
+                                        });
+                                    `
+                                }}
+                            />
+                        </>
+                    )}
                 </Head>
                 <body>
                     <script src="toggle-theme.js" />
