@@ -17,14 +17,14 @@ interface SkillListItemProps {
 }
 
 const SkillListItem = ({ label, Icon }: SkillListItemProps) => (
-    <li className="flex flex-col items-center my-4">
+    <li className="flex flex-col flex-auto items-center mx-2 my-4 w-24">
         <Icon />
-        <p className="my-2">{label}</p>
+        <p className="mt-2 mb-0">{label}</p>
     </li>
 )
 
 const SkillList = () => (
-    <ul className="grid grid-cols-3 xs:grid-cols-4 sm:grid-cols-4 md:grid-cols-5">
+    <ul className="flex flex-wrap">
         <SkillListItem label="JavaScript" Icon={JavaScriptLogo} />
         <SkillListItem label="TypeScript" Icon={TypeScriptLogo} />
         <SkillListItem label="React.js" Icon={ReactLogo} />
@@ -33,8 +33,8 @@ const SkillList = () => (
         <SkillListItem label="HTML" Icon={HTML5Logo} />
         <SkillListItem label="CSS" Icon={CSS3Logo} />
         <SkillListItem label="Sass" Icon={SassLogo} />
-        <SkillListItem label="BrightScript" Icon={RokuLogo} />
         <SkillListItem label="Git" Icon={GitLogo} />
+        <SkillListItem label="BrightScript" Icon={RokuLogo} />
     </ul>
 )
 
