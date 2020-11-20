@@ -7,7 +7,7 @@
         @apply antialiased;
     }
     body {
-        @apply text-midnight bg-white;
+        @apply text-midnight dark:text-gray-100 bg-white dark:bg-midnight;
     }
     h1 {
         @apply mt-8 mb-4 text-3xl font-bold leading-tight;
@@ -19,16 +19,16 @@
         @apply my-2 text-xl font-bold leading-tight;
     }
     p {
-        @apply mb-4 text-lg text-gray-800;
+        @apply mb-4 text-lg text-gray-800 dark:text-gray-400;
     }
     a {
         @apply transition-all duration-200;
     }
     p a {
-        @apply no-underline border-b-2 border-neon-blue font-semibold;
+        @apply no-underline border-b-2 border-neon-blue dark:border-cerise font-semibold;
     }
     p a:hover {
-        @apply text-neon-blue;
+        @apply text-neon-blue dark:text-cerise;
     }
     ::selection {
         @apply text-gray-100 bg-gray-500;

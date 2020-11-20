@@ -6,7 +6,7 @@ interface IUseDarkMode {
     storageKey?: string
 }
 
-export const useDarkMode = ({ darkModeClass = 'dark-mode', lightModeClass = 'light-mode', storageKey = 'theme' }: IUseDarkMode = {}) => {
+export const useDarkMode = ({ darkModeClass = 'dark', lightModeClass = 'light', storageKey = 'theme' }: IUseDarkMode = {}) => {
     const preferDarkQuery = '(prefers-color-scheme: dark)'
     const [isDarkMode, setDarkMode] = useState(() => {
         const storedMode = window.localStorage.getItem(storageKey)

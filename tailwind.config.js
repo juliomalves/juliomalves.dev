@@ -10,11 +10,11 @@ module.exports = {
     purge: {
         content: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}', './assets/svg/*.svg'],
         options: {
-            whitelist: ['dark-mode', 'light-mode']
+            whitelist: ['dark', 'light']
         }
     },
+    darkMode: 'class',
     theme: {
-        darkSelector: '.dark-mode',
         extend: {
             fontFamily: {
                 sans: ['Lato', ...defaultTheme.fontFamily.sans]
@@ -48,32 +48,5 @@ module.exports = {
             90: '.9',
             100: '1'
         }
-    },
-    variants: {
-        backgroundColor: ['dark', 'dark-hover', 'responsive', 'hover', 'focus'],
-        borderColor: ['dark', 'dark-hover', 'responsive', 'hover', 'focus'],
-        textColor: ['dark', 'dark-hover', 'responsive', 'hover', 'focus']
-    },
-    plugins: [
-        ({ addBase, config }) => {
-            addBase({
-                '.dark-mode': {
-                    body: {
-                        color: config('theme.colors.gray.100'),
-                        backgroundColor: config('theme.colors.midnight')
-                    },
-                    p: {
-                        color: config('theme.colors.gray.500'),
-                        a: {
-                            borderColor: config('theme.colors.cerise')
-                        },
-                        'a:hover': {
-                            color: config('theme.colors.cerise')
-                        }
-                    }
-                }
-            })
-        },
-        require('tailwindcss-dark-mode')()
-    ]
+    }
 }

@@ -2,8 +2,8 @@
 
 (function() {
     const storageKey = 'jma-theme';
-    const darkThemeClass = 'dark-mode';
-    const lightThemeClass = 'light-mode';
+    const darkThemeClass = 'dark';
+    const lightThemeClass = 'light';
     const prefersDarkColorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
     const storedTheme = localStorage.getItem(storageKey);
 
