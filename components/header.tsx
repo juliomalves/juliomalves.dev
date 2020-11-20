@@ -15,6 +15,8 @@ const Header = () => {
                     alt="Julio Alves"
                     className="w-12 h-auto border-2 border-neon-blue dark:border-cerise rounded-full"
                     src={profileImg}
+                    width="48"
+                    height="48"
                 />
                 <span className="pl-3 text-neon-blue dark:text-cerise text-xl font-semibold">juliomalves.dev</span>
             </Link>
