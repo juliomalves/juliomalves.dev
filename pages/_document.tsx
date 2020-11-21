@@ -35,7 +35,6 @@ class MyDocument extends Document {
                     )}
                 </Head>
                 <body>
-                    <script src="toggle-theme.js" />
                     <Main />
                     <NextScript />
                 </body>

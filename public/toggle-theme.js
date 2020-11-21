@@ -1,5 +1,4 @@
 // Prevents flash if dark mode is the default theme.
-
 (function() {
     const storageKey = 'jma-theme';
     const darkThemeClass = 'dark';
@@ -14,9 +13,9 @@
 
     // Overwrites 'prefers-color-scheme' media query if stored in local storage
     if (storedTheme) {
-        setTheme(storedTheme === 'dark');
+        setTheme(storedTheme === darkThemeClass);
     } else {
         setTheme(prefersDarkColorScheme);
-        localStorage.setItem(storageKey, prefersDarkColorScheme ? 'dark' : 'light');
+        localStorage.setItem(storageKey, prefersDarkColorScheme ? darkThemeClass : lightThemeClass);
     }
 })();
