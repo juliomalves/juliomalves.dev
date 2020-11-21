@@ -20,7 +20,7 @@ const Header = () => {
                 />
                 <span className="pl-3 text-neon-blue dark:text-cerise text-xl font-semibold">juliomalves.dev</span>
             </Link>
-            {hasMounted ? <ThemeToggleButton /> : null}
+            {hasMounted && <ThemeToggleButton />}
         </header>
     )
 }

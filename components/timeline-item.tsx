@@ -33,7 +33,7 @@ const TimelineItem = ({ children, date, title, type }: ITimelineItem) => {
                     {dateString}
                 </time>
             </div>
-            <div className="flex flex-col pl-8 relative text-gray-800 dark:text-gray-500 timeline -z-1">
+            <div className="flex flex-col pl-8 relative text-gray-800 dark:text-gray-400 timeline -z-1">
                 <h3 className="text-text-midnight dark:text-gray-100">
                     {title} {<Emoji label={type} symbol={symbol} />}
                 </h3>
