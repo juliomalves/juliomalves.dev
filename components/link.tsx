@@ -1,8 +1,8 @@
-import React, { ReactNode } from 'react'
+import * as React from 'react'
 import NextLink from 'next/link'
 
 interface LinkProps {
-    children: ReactNode
+    children: React.ReactNode
     className?: string
     external?: boolean
     href: string

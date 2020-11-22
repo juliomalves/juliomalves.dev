@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 
 import CSS3Logo from '@/assets/svg/css3-logo.svg'
 import GitLogo from '@/assets/svg/git-logo.svg'

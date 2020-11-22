@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import * as React from 'react'
 import Emoji from '@/components/emoji'
 
 export enum TimelineItemType {
@@ -9,7 +9,7 @@ export enum TimelineItemType {
 
 interface ITimelineItem {
     date: string
-    children: ReactNode
+    children: React.ReactNode
     title: string
     type: TimelineItemType
 }

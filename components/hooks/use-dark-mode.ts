@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import * as React from 'react'
 
 interface IUseDarkMode {
     darkModeClass?: string
@@ -7,20 +7,20 @@ interface IUseDarkMode {
 }
 
 export const useDarkMode = ({ darkModeClass = 'dark', lightModeClass = 'light', storageKey = 'theme' }: IUseDarkMode = {}) => {
-    const preferDarkQuery = '(prefers-color-scheme: dark)'
-    const [isDarkMode, setDarkMode] = useState(() => {
+    const MEDIA_QUERY = '(prefers-color-scheme: dark)'
+    const [isDarkMode, setDarkMode] = React.useState(() => {
         const storedMode = window.localStorage.getItem(storageKey)
-        return (storedMode && storedMode === 'dark') ?? window.matchMedia(preferDarkQuery).matches
+        return (storedMode && storedMode === 'dark') ?? window.matchMedia(MEDIA_QUERY).matches
     })
 
-    useEffect(() => {
-        const mediaQuery = window.matchMedia(preferDarkQuery)
-        const handleChange = () => setDarkMode(mediaQuery.matches)
-        mediaQuery.addListener(handleChange)
-        return () => mediaQuery.removeListener(handleChange)
+    React.useEffect(() => {
+        const mediaQueryList = window.matchMedia(MEDIA_QUERY)
+        const handleChange = (ev: MediaQueryListEvent) => setDarkMode(ev.matches)
+        mediaQueryList.addListener(handleChange)
+        return () => mediaQueryList.removeListener(handleChange)
     }, [])
 
-    useEffect(() => {
+    React.useEffect(() => {
         window.localStorage.setItem(storageKey, isDarkMode ? 'dark' : 'light')
         document.documentElement.classList.add(isDarkMode ? darkModeClass : lightModeClass)
         document.documentElement.classList.remove(isDarkMode ? lightModeClass : darkModeClass)

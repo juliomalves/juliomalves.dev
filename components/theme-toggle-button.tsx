@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import { useDarkMode } from '@/components/hooks/use-dark-mode'
 
 import MoonIcon from '@/assets/svg/moon-icon.svg'

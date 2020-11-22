@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import Section from '@/components/section'
 
 import SummaryMarkup from '@/components/sections/summary.mdx'

@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import Link from '@/components/link'
 import ThemeToggleButton from '@/components/theme-toggle-button'
 import { useHasMounted } from '@/components/hooks/use-has-mounted'

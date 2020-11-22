@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import * as React from 'react'
 import Head from 'next/head'
 import { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
@@ -12,7 +12,7 @@ import '@/styles/app.css'
 const App = ({ Component, pageProps }: AppProps) => {
     const router = useRouter()
 
-    useEffect(() => {
+    React.useEffect(() => {
         const handleRouteChange = (url: string) => {
             pageView(url)
         }
