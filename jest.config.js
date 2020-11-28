@@ -1,15 +1,23 @@
+const path = require('path')
+
 module.exports = {
-    roots: ['<rootDir>'],
-    moduleFileExtensions: ['js', 'ts', 'tsx', 'json'],
-    testPathIgnorePatterns: ['<rootDir>[/\\\\](node_modules|.next)[/\\\\]'],
-    transformIgnorePatterns: ['[/\\\\]node_modules[/\\\\].+\\.(ts|tsx)$'],
-    transform: {
-        '^.+\\.(ts|tsx)$': 'babel-jest'
+    globals: {
+        'ts-jest': {
+            tsconfig: 'tsconfig.jest.json'
+        }
     },
-    watchPlugins: ['jest-watch-typeahead/filename', 'jest-watch-typeahead/testname'],
+    preset: 'ts-jest',
+    testEnvironment: 'jsdom',
+    rootDir: path.resolve(__dirname, './'),
+    setupFilesAfterEnv: ['<rootDir>/tests/global-mocks.ts'],
+    moduleFileExtensions: ['js', 'ts', 'tsx', 'json'],
+    testMatch: ['<rootDir>/tests/**/*.test.{ts,tsx}'],
     moduleNameMapper: {
-        '\\.(css|sass|scss)$': 'identity-obj-proxy',
-        '\\.(gif|ttf|eot|svg|png)$': '<rootDir>/test/__mocks__/fileMock.js',
+        '^react$': 'preact/compat',
+        '^react-dom/test-utils$': 'preact/test-utils',
+        '^react-dom$': 'preact/compat',
+        '\\.(css)$': 'identity-obj-proxy',
+        '\\.(png|svg|pdf|jpg|jpeg)$': '<rootDir>/tests/__mocks__/fileMock.js',
         '^@/(.*)': '<rootDir>/$1'
     }
 }
