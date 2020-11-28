@@ -29,8 +29,6 @@
     }
   },
   "dependencies": {
-    "@mdx-js/loader": "~1.6.18",
-    "@next/mdx": "~10.0.2",
     "@prefresh/next": "~1.4.1",
     "next": "~10.0.2",
     "next-compose-plugins": "~2.2.1",
