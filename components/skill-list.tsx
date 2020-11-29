@@ -24,7 +24,7 @@ const SkillListItem = ({ label, Icon }: SkillListItemProps) => (
 )
 
 const SkillList = () => (
-    <ul className="flex flex-wrap">
+    <ul className="flex flex-wrap sm:px-4">
         <SkillListItem label="JavaScript" Icon={JavaScriptLogo} />
         <SkillListItem label="TypeScript" Icon={TypeScriptLogo} />
         <SkillListItem label="React.js" Icon={ReactLogo} />
