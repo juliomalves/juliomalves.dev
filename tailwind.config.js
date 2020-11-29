@@ -22,7 +22,7 @@ module.exports = {
             yellow: colors.yellow,
             midnight: '#070919',
             'neon-blue': '#5C61FF',
-            cerise: '#E4267B'
+            green: '#00CC99'
         },
         fontFamily: {
             sans: ['Lato', ...defaultTheme.fontFamily.sans]

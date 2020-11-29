@@ -13,7 +13,7 @@ interface FooterLinkProps {
 
 const FooterLisItem = ({ children, href, label }: FooterLinkProps) => (
     <li className="p-4">
-        <Link href={href} className="text-gray-800 hover:text-neon-blue dark:text-gray-400 dark:hover:text-cerise" label={label} external>
+        <Link href={href} className="flex text-gray-800 hover:text-neon-blue dark:text-gray-400 dark:hover:text-green" label={label} external>
             {children}
         </Link>
     </li>

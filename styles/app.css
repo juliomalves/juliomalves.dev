@@ -25,10 +25,10 @@
         @apply transition-all duration-200;
     }
     p a {
-        @apply no-underline border-b-2 border-neon-blue dark:border-cerise font-semibold;
+        @apply no-underline border-b-2 border-neon-blue dark:border-green font-semibold;
     }
     p a:hover {
-        @apply text-neon-blue dark:text-cerise;
+        @apply text-neon-blue dark:text-green;
     }
     ::selection {
         @apply text-gray-100 bg-gray-400;
