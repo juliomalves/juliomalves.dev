@@ -10,7 +10,7 @@ const Header = () => {
 
     return (
         <header className="sticky top-0 flex flex-row justify-between items-center w-full max-w-3xl mx-auto px-4 sm:px-8 py-4 bg-white dark:bg-midnight">
-            <Link href="/" className="flex flex-row items-center">
+            <Link href="/" className="flex flex-row items-center focus-outline">
                 <img
                     alt="Julio Alves"
                     className="w-12 h-auto border-2 border-neon-blue dark:border-green rounded-full"

@@ -62,7 +62,7 @@ const HomePage = () => {
                 <h2 id="contact">Contact</h2>
                 <p>
                     If you want to reach out please drop me an{' '}
-                    <Link href="mailto:contact@juliomalves.dev" external>
+                    <Link className="focus-outline" href="mailto:contact@juliomalves.dev" external>
                         email
                     </Link>
                     . You can also check out my social media presence following the links below.

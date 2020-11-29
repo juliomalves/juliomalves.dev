@@ -59,4 +59,7 @@
         position: absolute;
         left: 0.45em;
     }
+    .focus-outline {
+        @apply focus:outline-none focus:ring-2 focus:ring-opacity-60 focus:ring-opacity-50 focus:ring-neon-blue dark:focus:ring-green
+    }
 }
