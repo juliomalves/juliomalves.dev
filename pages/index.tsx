@@ -35,7 +35,7 @@ const HomePage = () => {
                     <TimelineItem type={TimelineItemType.Work} date="2017-01-05" title="Joined Accedo.tv">
                         <p>
                             Started at Accedo.tv where I contributed to several Node.js microservices and CTV app. Around the same time,
-                            decided to move closer to Central London, reducing my commute time by over 2 hours a day!
+                            decided to move closer to Central London, reducing my commute time by over <em>2 hours</em> a day!
                         </p>
                     </TimelineItem>
                     <TimelineItem type={TimelineItemType.Work} date="2015-09-25" title="Joined TV App Agency">
