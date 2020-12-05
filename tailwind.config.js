@@ -20,9 +20,18 @@ module.exports = {
             white: colors.white,
             gray: colors.blueGray,
             yellow: colors.yellow,
+            'energy-yellow': '#F0DB4F',
             midnight: '#070919',
             'neon-blue': '#5C61FF',
-            green: '#00CC99'
+            'navy-blue': '#007ACC',
+            'royal-blue': '#2965F1',
+            'sky-blue': '#61DBFB',
+            green: '#00CC99',
+            'may-green': '#3C873A',
+            orange: '#E34C26',
+            'red-orange': '#F34F29',
+            pink: '#CC6699',
+            purple: '#6F1AB1'
         },
         fontFamily: {
             sans: ['Lato', ...defaultTheme.fontFamily.sans]

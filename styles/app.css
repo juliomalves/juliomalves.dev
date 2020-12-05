@@ -65,6 +65,9 @@
     .focus-outline {
         @apply focus:outline-none focus:ring-2 focus:ring-opacity-60 focus:ring-opacity-50 focus:ring-neon-blue dark:focus:ring-green
     }
+    .svg-skill-icon {
+        @apply inline-block w-12 sm:w-16 transition-colors duration-200
+    }
 }
 
 @variants hover {
