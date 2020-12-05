@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "@prefresh/next": "~1.4.1",
-    "next": "~10.0.2",
+    "next": "~10.0.3",
     "next-compose-plugins": "~2.2.1",
     "next-images": "~1.6.2",
     "next-react-svg": "~1.1.2",
@@ -40,7 +40,7 @@
     "react-dom": "github:preact-compat/react-dom#1.0.0"
   },
   "devDependencies": {
-    "@next/bundle-analyzer": "~10.0.2",
+    "@next/bundle-analyzer": "~10.0.3",
     "@testing-library/jest-dom": "~5.11.6",
     "@testing-library/preact": "~2.0.0",
     "@types/gtag.js": "~0.0.3",
