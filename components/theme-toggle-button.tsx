@@ -11,7 +11,7 @@ const ThemeToggleButton = () => {
 
     return (
         <button
-            className="p-4 text-yellow-300 focus-outline"
+            className="flex p-2 text-yellow-400 focus-outline hover:glow"
             onClick={toggleMode}
             aria-label={label}
         >

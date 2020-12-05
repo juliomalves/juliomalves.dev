@@ -22,7 +22,7 @@
         @apply mb-4 text-lg text-gray-800 dark:text-gray-400;
     }
     a {
-        @apply transition-all duration-200;
+        @apply transition-colors duration-200;
     }
     p a {
         @apply no-underline border-b-2 border-neon-blue dark:border-green font-semibold;
@@ -64,5 +64,11 @@
     }
     .focus-outline {
         @apply focus:outline-none focus:ring-2 focus:ring-opacity-60 focus:ring-opacity-50 focus:ring-neon-blue dark:focus:ring-green
+    }
+}
+
+@variants hover {
+    .glow {
+        filter: drop-shadow(0px 0px 6px);
     }
 }
