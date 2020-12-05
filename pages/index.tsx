@@ -1,13 +1,24 @@
 import * as React from 'react'
-import SkillList from '@/components/skill-list'
+import SkillItem from '@/components/skill-item'
 import TimelineItem, { TimelineItemType } from '@/components/timeline-item'
 import Link from '@/components/link'
+
+import CSS3Logo from '@/assets/svg/css3-logo.svg'
+import GitLogo from '@/assets/svg/git-logo.svg'
+import HTML5Logo from '@/assets/svg/html5-logo.svg'
+import JavaScriptLogo from '@/assets/svg/javascript-logo.svg'
+import NextJSLogo from '@/assets/svg/nextjs-logo.svg'
+import NodeJSLogo from '@/assets/svg/nodejs-logo.svg'
+import ReactLogo from '@/assets/svg/react-logo.svg'
+import RokuLogo from '@/assets/svg/roku-logo.svg'
+import SassLogo from '@/assets/svg/sass-logo.svg'
+import TypeScriptLogo from '@/assets/svg/typescript-logo.svg'
 
 const HomePage = () => {
     const sectionClassName = 'flex flex-col px-4 sm:px-8'
 
     return (
-        <main className="grid-wrapper">
+        <main className="grid-wrapper min-h-content">
             <section className={sectionClassName} aria-label="Summary">
                 <h1 id="summary">
                     Hello, I&apos;m <span className="inline-block">Julio Alves</span>
@@ -24,7 +35,18 @@ const HomePage = () => {
             <section className={sectionClassName} aria-labelledby="tech-skills">
                 <h2 id="tech-skills">Tech Skills</h2>
                 <p>Here are some of the technologies and tools I&apos;m proficient and comfortable with:</p>
-                <SkillList />
+                <ul className="flex flex-wrap sm:px-4">
+                    <SkillItem label="JavaScript" Icon={JavaScriptLogo} />
+                    <SkillItem label="TypeScript" Icon={TypeScriptLogo} />
+                    <SkillItem label="React.js" Icon={ReactLogo} />
+                    <SkillItem label="Next.js" Icon={NextJSLogo} />
+                    <SkillItem label="Node.js" Icon={NodeJSLogo} />
+                    <SkillItem label="HTML" Icon={HTML5Logo} />
+                    <SkillItem label="CSS" Icon={CSS3Logo} />
+                    <SkillItem label="Sass" Icon={SassLogo} />
+                    <SkillItem label="Git" Icon={GitLogo} />
+                    <SkillItem label="BrightScript" Icon={RokuLogo} />
+                </ul>
             </section>
             <section className={sectionClassName} aria-labelledby="timeline">
                 <h2 id="timeline">Timeline</h2>
