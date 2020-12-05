@@ -59,6 +59,9 @@
         position: absolute;
         left: 0.45em;
     }
+    .min-h-content {
+        min-height: 60vh
+    }
     .focus-outline {
         @apply focus:outline-none focus:ring-2 focus:ring-opacity-60 focus:ring-opacity-50 focus:ring-neon-blue dark:focus:ring-green
     }
