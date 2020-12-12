@@ -8,6 +8,7 @@ describe('GIVEN a <ThemeToggleButton />', () => {
             render(<ThemeToggleButton />)
             fireEvent.click(screen.getByLabelText('Dark mode'))
             expect(screen.getByLabelText('Light mode')).toBeInTheDocument()
+            expect(screen.getByRole('img', { name: 'Sun icon' })).toBeInTheDocument()
         })
     })
 })
