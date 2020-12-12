@@ -1,5 +1,4 @@
 import * as React from 'react'
-import Head from 'next/head'
 import { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
 import Metadata from '@/components/metadata'
@@ -26,9 +25,6 @@ const App = ({ Component, pageProps }: AppProps) => {
     return (
         <>
             <Metadata />
-            <Head>
-                <script type="text/javascript" src="toggle-theme.js" async />
-            </Head>
             <Header />
             <Component {...pageProps} />
             <Footer />
