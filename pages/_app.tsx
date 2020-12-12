@@ -27,7 +27,7 @@ const App = ({ Component, pageProps }: AppProps) => {
         <>
             <Metadata />
             <Head>
-                <script type="text/javascript" src="toggle-theme.js" />
+                <script type="text/javascript" src="toggle-theme.js" async />
             </Head>
             <Header />
             <Component {...pageProps} />

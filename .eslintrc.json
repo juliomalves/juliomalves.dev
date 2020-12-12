@@ -3,8 +3,11 @@
   "plugins": ["@typescript-eslint"],
   "extends": [
     "eslint:recommended",
-    "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:@next/next/recommended",
     "prettier",
     "prettier/@typescript-eslint"
   ],
@@ -36,7 +39,12 @@
         "allow": ["warn", "error"]
       }
     ],
-    "comma-dangle": ["error", "never"]
+    "comma-dangle": ["error", "never"],
+    "jsx-a11y/anchor-is-valid": ["error", {
+      "components": ["Link"],
+      "specialLink": ["hrefLeft", "hrefRight"],
+      "aspects": ["invalidHref", "preferButton"]
+    }]
   },
   "settings": {
       "react": {

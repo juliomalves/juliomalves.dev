@@ -24,7 +24,7 @@ export const useDarkMode = ({ darkModeClass = 'dark', lightModeClass = 'light', 
         window.localStorage.setItem(storageKey, isDarkMode ? 'dark' : 'light')
         document.documentElement.classList.add(isDarkMode ? darkModeClass : lightModeClass)
         document.documentElement.classList.remove(isDarkMode ? lightModeClass : darkModeClass)
-    }, [isDarkMode])
+    }, [isDarkMode, darkModeClass, lightModeClass, storageKey])
 
     return [isDarkMode, setDarkMode] as const
 }
