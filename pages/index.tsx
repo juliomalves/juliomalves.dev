@@ -3,17 +3,18 @@ import Head from 'next/head'
 import SkillItem from '@/components/skill-item'
 import TimelineItem, { TimelineItemType } from '@/components/timeline-item'
 import Link from '@/components/link'
-
-import CSS3Logo from '@/assets/svg/css3-logo.svg'
-import GitLogo from '@/assets/svg/git-logo.svg'
-import HTML5Logo from '@/assets/svg/html5-logo.svg'
-import JavaScriptLogo from '@/assets/svg/javascript-logo.svg'
-import NextJSLogo from '@/assets/svg/nextjs-logo.svg'
-import NodeJSLogo from '@/assets/svg/nodejs-logo.svg'
-import ReactLogo from '@/assets/svg/react-logo.svg'
-import RokuLogo from '@/assets/svg/roku-logo.svg'
-import SassLogo from '@/assets/svg/sass-logo.svg'
-import TypeScriptLogo from '@/assets/svg/typescript-logo.svg'
+import SvgIcon, {
+    cssIcon,
+    gitIcon,
+    htmlIcon,
+    javascriptIcon,
+    nextjsIcon,
+    nodejsIcon,
+    reactIcon,
+    rokuIcon,
+    sassIcon,
+    typescriptIcon
+} from '@/components/svg-icon'
 
 const HomePage = () => {
     const sectionClassName = 'flex flex-col px-4 sm:px-8'
@@ -41,16 +42,46 @@ const HomePage = () => {
                     <h2 id="tech-skills">Tech Skills</h2>
                     <p>Here are some of the technologies and tools I&apos;m proficient and comfortable with:</p>
                     <ul className="flex flex-wrap sm:px-4">
-                        <SkillItem label="JavaScript" Icon={JavaScriptLogo} />
-                        <SkillItem label="TypeScript" Icon={TypeScriptLogo} />
-                        <SkillItem label="React.js" Icon={ReactLogo} />
-                        <SkillItem label="Next.js" Icon={NextJSLogo} />
-                        <SkillItem label="Node.js" Icon={NodeJSLogo} />
-                        <SkillItem label="HTML" Icon={HTML5Logo} />
-                        <SkillItem label="CSS" Icon={CSS3Logo} />
-                        <SkillItem label="Sass" Icon={SassLogo} />
-                        <SkillItem label="Git" Icon={GitLogo} />
-                        <SkillItem label="BrightScript" Icon={RokuLogo} />
+                        <SkillItem
+                            label="JavaScript"
+                            icon={<SvgIcon className="svg-skill-icon hover:text-energy-yellow" d={javascriptIcon} viewBox="0 0 50 50" />}
+                        />
+                        <SkillItem
+                            label="TypeScript"
+                            icon={<SvgIcon className="svg-skill-icon hover:text-navy-blue" d={typescriptIcon} viewBox="0 0 50 50" />}
+                        />
+                        <SkillItem
+                            label="React.js"
+                            icon={<SvgIcon className="svg-skill-icon hover:text-sky-blue" d={reactIcon} viewBox="0 0 50 50" />}
+                        />
+                        <SkillItem
+                            label="Next.js"
+                            icon={<SvgIcon className="svg-skill-icon hover:text-gray-500" d={nextjsIcon} viewBox="0 0 48 48" />}
+                        />
+                        <SkillItem
+                            label="Node.js"
+                            icon={<SvgIcon className="svg-skill-icon hover:text-may-green" d={nodejsIcon} viewBox="0 0 32 32" />}
+                        />
+                        <SkillItem
+                            label="HTML"
+                            icon={<SvgIcon className="svg-skill-icon hover:text-orange" d={htmlIcon} viewBox="0 0 50 50" />}
+                        />
+                        <SkillItem
+                            label="CSS"
+                            icon={<SvgIcon className="svg-skill-icon hover:text-royal-blue" d={cssIcon} viewBox="0 0 128 128" />}
+                        />
+                        <SkillItem
+                            label="Sass"
+                            icon={<SvgIcon className="svg-skill-icon hover:text-pink" d={sassIcon} viewBox="0 0 50 50" />}
+                        />
+                        <SkillItem
+                            label="Git"
+                            icon={<SvgIcon className="svg-skill-icon hover:text-red-orange" d={gitIcon} viewBox="0 0 50 50" />}
+                        />
+                        <SkillItem
+                            label="BrightScript"
+                            icon={<SvgIcon className="svg-skill-icon hover:text-purple" d={rokuIcon} viewBox="0 0 24 24" />}
+                        />
                     </ul>
                 </section>
                 <section className={sectionClassName} aria-labelledby="timeline">

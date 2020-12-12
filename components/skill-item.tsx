@@ -2,12 +2,12 @@ import * as React from 'react'
 
 interface ISkillItem {
     label: string
-    Icon: string
+    icon: React.ReactNode
 }
 
-const SkillItem = ({ label, Icon }: ISkillItem) => (
+const SkillItem = ({ label, icon }: ISkillItem) => (
     <li className="flex flex-col flex-auto items-center mx-2 my-4 w-24" aria-label={label}>
-        <Icon />
+        {icon}
         <p className="mt-2 mb-0">{label}</p>
     </li>
 )
