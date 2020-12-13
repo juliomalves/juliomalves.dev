@@ -53,20 +53,20 @@
     }
     .timeline::before {
         background-color: currentColor;
-        content: "";
+        content: '';
         height: 100%;
         width: 2px;
         position: absolute;
         left: 0.45em;
     }
     .min-h-content {
-        min-height: 60vh
+        min-height: 60vh;
     }
     .focus-outline {
-        @apply focus:outline-none focus:ring-2 focus:ring-opacity-60 focus:ring-opacity-50 focus:ring-neon-blue dark:focus:ring-green
+        @apply focus:outline-none focus:ring-2 focus:ring-opacity-60 focus:ring-opacity-50 focus:ring-neon-blue dark:focus:ring-green;
     }
     .svg-skill-icon {
-        @apply inline-block w-12 sm:w-16 transition-colors duration-200
+        @apply inline-block w-12 sm:w-16 transition-colors duration-200;
     }
 }
 
@@ -74,4 +74,28 @@
     .glow {
         filter: drop-shadow(0px 0px 6px);
     }
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(../assets/fonts/lato-bold.woff2) format('woff2'), url(../assets/fonts/lato-bold.woff) format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(../assets/fonts/lato-regular-italic.woff2) format('woff2'), url(../assets/fonts/lato-regular-italic.woff) format('woff');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(../assets/fonts/lato-regular.woff2) format('woff2'), url(../assets/fonts/lato-regular.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
