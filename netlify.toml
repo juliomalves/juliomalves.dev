@@ -3,4 +3,4 @@
     [headers.values]
         X-Frame-Options = "DENY"
         X-XSS-Protection = "1; mode=block"
-        Content-Security-Policy = "script-src 'self' www.googletagmanager.com"
+        Content-Security-Policy = "script-src 'self' 'sha256-g/3BALveGEpdkCkH2y/77h1LGKA+x2MiC79foTHfnso=' 'sha256-9RYbJifUPerssoMLMeQ+czknyHjirMOD3crbk0VzmAo=' www.googletagmanager.com"
