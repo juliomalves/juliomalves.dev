@@ -7,7 +7,7 @@ describe('GIVEN a <Header />', () => {
         render(<Header />)
         const headerElement = screen.getByRole('banner')
         expect(within(headerElement).getByLabelText('juliomalves.dev')).toBeInTheDocument()
-        expect(within(headerElement).getByRole('img', { name: 'Picture of Julio Alves' })).toBeInTheDocument()
+        expect(within(headerElement).getByRole('img', { name: 'Julio Alves' })).toBeInTheDocument()
         expect(within(headerElement).getByLabelText('Dark mode')).toBeInTheDocument()
     })
 })
