@@ -37,11 +37,7 @@ module.exports = {
             sans: ['Lato', ...defaultTheme.fontFamily.sans]
         },
         screens: {
-            xs: '420px',
-            sm: '640px',
-            md: '768px',
-            lg: '1024px',
-            xl: '1280px'
+            tablet: '640px'
         },
         extend: {
             zIndex: {

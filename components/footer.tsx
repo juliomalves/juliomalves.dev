@@ -25,7 +25,7 @@ const Footer = () => {
     const currentYear = new Date().getFullYear()
 
     return (
-        <footer className="flex flex-col justify-center items-center w-full max-w-3xl mx-auto px-6 lg:px-0 py-4 lg:my-4">
+        <footer className="flex flex-col justify-center items-center w-full max-w-3xl mx-auto p-4">
             <ul className="flex items-center">
                 <FooterLisItem href="https://www.twitter.com/juli0malves" label="Twitter">
                     <SvgIcon className="w-8 h-8" d={twitterIcon} label="Twitter logo" viewBox="0 0 32 32" />

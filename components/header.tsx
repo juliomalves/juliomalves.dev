@@ -9,7 +9,7 @@ const Header = () => {
     const hasMounted = useHasMounted()
 
     return (
-        <header className="sticky top-0 flex flex-row justify-between items-center w-full max-w-3xl mx-auto px-4 sm:px-8 py-4 bg-white dark:bg-midnight">
+        <header className="sticky top-0 flex flex-row justify-between items-center w-full max-w-3xl mx-auto px-4 tablet:px-8 py-4 bg-white dark:bg-midnight">
             <Link href="/" className="flex flex-row items-center focus-outline" label="juliomalves.dev">
                 <img
                     alt="Julio Alves"

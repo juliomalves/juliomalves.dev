@@ -17,7 +17,7 @@ import SvgIcon, {
 } from '@/components/svg-icon'
 
 const HomePage = () => {
-    const sectionClassName = 'flex flex-col px-4 sm:px-8'
+    const sectionClassName = 'flex flex-col px-4 tablet:px-8'
 
     return (
         <>
@@ -41,7 +41,7 @@ const HomePage = () => {
                 <section className={sectionClassName} aria-labelledby="tech-skills">
                     <h2 id="tech-skills">Tech Skills</h2>
                     <p>Here are some of the technologies and tools I&apos;m proficient and comfortable with:</p>
-                    <ul className="flex flex-wrap sm:px-4">
+                    <ul className="flex flex-wrap tablet:px-4">
                         <SkillItem
                             label="JavaScript"
                             icon={<SvgIcon className="svg-skill-icon hover:text-energy-yellow" label="JavaScript logo" d={javascriptIcon} viewBox="0 0 50 50" />}

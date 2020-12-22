@@ -28,7 +28,7 @@ const TimelineItem = ({ children, date, title, type }: ITimelineItem) => {
     return (
         <li className="flex flex-col">
             <div className="flex items-center py-2">
-                <div className="border-2 rounded-full border-neon-blue dark:border-green w-4 h-4"></div>
+                <span className="border-2 rounded-full border-neon-blue dark:border-green w-4 h-4"></span>
                 <time className="text-lg font-semibold px-4" dateTime={date}>
                     {dateString}
                 </time>
