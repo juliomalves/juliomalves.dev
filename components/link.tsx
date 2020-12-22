@@ -14,6 +14,7 @@ const Link = ({ children, className, external = false, href, label }: LinkProps)
         return (
             <a href={href} className={className} aria-label={label} rel="noopener noreferrer" target="_blank">
                 {children}
+                <span className="sr-only"> (opens a new window)</span>
             </a>
         )
     }

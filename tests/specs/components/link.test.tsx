@@ -17,6 +17,7 @@ describe('GIVEN a <Link />', () => {
         expect(linkElement).not.toHaveAttribute('rel')
         expect(linkElement).not.toHaveAttribute('target')
         expect(within(linkElement).getByText('Link text')).toBeInTheDocument()
+        expect(within(linkElement).queryByText('(opens a new window)')).toBeNull()
     })
 
     describe('AND the link is external', () => {
@@ -27,6 +28,7 @@ describe('GIVEN a <Link />', () => {
             expect(linkElement).toHaveAttribute('rel', 'noopener noreferrer')
             expect(linkElement).toHaveAttribute('target', '_blank')
             expect(within(linkElement).getByText('Link text')).toBeInTheDocument()
+            expect(within(linkElement).getByText('(opens a new window)')).toBeInTheDocument()
         })
     })
 })
