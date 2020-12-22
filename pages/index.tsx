@@ -25,10 +25,10 @@ const HomePage = () => {
                 <link rel="canonical" href="https://juliomalves.dev" />
             </Head>
             <main className="grid-wrapper min-h-content">
+                <h1 className="px-4 tablet:px-8">
+                    Hello, I&apos;m <span className="inline-block">Julio Alves</span>
+                </h1>
                 <section className={sectionClassName} aria-label="Summary">
-                    <h1 id="summary">
-                        Hello, I&apos;m <span className="inline-block">Julio Alves</span>
-                    </h1>
                     <p>
                         I&apos;m a <strong>software engineer</strong> experienced in building web apps for all kinds of devices. I&apos;m
                         based in London, UK where I work as a Senior Front-end Engineer at ITV.
