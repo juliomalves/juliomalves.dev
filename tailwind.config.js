@@ -2,14 +2,8 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-    future: {
-        defaultLineHeights: true,
-        purgeLayersByDefault: true,
-        removeDeprecatedGapUtilities: true,
-        standardFontWeights: true
-    },
     purge: {
-        content: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}', './assets/svg/*.svg'],
+        content: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}'],
         options: {
             safelist: ['dark', 'light']
         }

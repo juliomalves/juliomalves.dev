@@ -1,7 +1,5 @@
 @tailwind base;
 
-/* Custom base styles below */
-
 @layer base {
     html {
         @apply antialiased;
@@ -33,15 +31,33 @@
     ::selection {
         @apply text-gray-100 bg-gray-400;
     }
+
+    @font-face {
+        font-family: Lato;
+        src: url(../assets/fonts/lato-bold.woff2) format('woff2'), url(../assets/fonts/lato-bold.woff) format('woff');
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: Lato;
+        src: url(../assets/fonts/lato-regular-italic.woff2) format('woff2'), url(../assets/fonts/lato-regular-italic.woff) format('woff');
+        font-weight: 400;
+        font-style: italic;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: Lato;
+        src: url(../assets/fonts/lato-regular.woff2) format('woff2'), url(../assets/fonts/lato-regular.woff) format('woff');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+    }
 }
 
 @tailwind components;
 
-/* Custom component styles below */
-
 @tailwind utilities;
-
-/* Custom utilities styles below */
 
 @layer utilities {
     .grid-wrapper {
@@ -63,39 +79,15 @@
         min-height: calc(100vh - 13.25rem);
     }
     .focus-outline {
-        @apply focus:outline-none focus:ring-2 focus:ring-opacity-60 focus:ring-opacity-50 focus:ring-neon-blue dark:focus:ring-green;
+        @apply focus:outline-none focus:ring-2 focus:ring-opacity-60 focus:ring-neon-blue dark:focus:ring-green;
     }
     .svg-skill-icon {
         @apply inline-block w-12 tablet:w-16 transition-colors duration-200;
     }
-}
 
-@variants hover {
-    .glow {
-        filter: drop-shadow(0px 0px 6px);
+    @variants hover {
+        .glow {
+            filter: drop-shadow(0px 0px 6px);
+        }
     }
-}
-
-@font-face {
-    font-family: Lato;
-    src: url(../assets/fonts/lato-bold.woff2) format('woff2'), url(../assets/fonts/lato-bold.woff) format('woff');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: Lato;
-    src: url(../assets/fonts/lato-regular-italic.woff2) format('woff2'), url(../assets/fonts/lato-regular-italic.woff) format('woff');
-    font-weight: 400;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: Lato;
-    src: url(../assets/fonts/lato-regular.woff2) format('woff2'), url(../assets/fonts/lato-regular.woff) format('woff');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
 }
