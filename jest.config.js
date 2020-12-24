@@ -19,5 +19,16 @@ module.exports = {
         '\\.(css)$': 'identity-obj-proxy',
         '\\.(png|svg|pdf|jpg|jpeg)$': '<rootDir>/tests/mocks/fileMock.js',
         '^@/(.*)': '<rootDir>/$1'
+    },
+    collectCoverageFrom: ['<rootDir>/components/**/*.{ts,tsx}', '<rootDir>/helpers/**/*.{ts,tsx}', '<rootDir>/pages/**/*.{ts,tsx}'],
+    coverageDirectory: '<rootDir>/tests/coverage',
+    coverageReporters: ['text-summary', 'lcov', 'html'],
+    coverageThreshold: {
+        global: {
+            branches: 80,
+            functions: 80,
+            lines: 80,
+            statements: 80
+        }
     }
 }
