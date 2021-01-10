@@ -44,31 +44,75 @@ const HomePage = () => {
                     <ul className="flex flex-wrap tablet:px-4">
                         <SkillItem
                             label="JavaScript"
-                            icon={<SvgIcon className="svg-skill-icon hover:text-energy-yellow" label="JavaScript logo" d={javascriptIcon} viewBox="0 0 50 50" />}
+                            icon={
+                                <SvgIcon
+                                    className="svg-skill-icon hover:text-energy-yellow"
+                                    label="JavaScript logo"
+                                    d={javascriptIcon}
+                                    viewBox="0 0 50 50"
+                                />
+                            }
                         />
                         <SkillItem
                             label="TypeScript"
-                            icon={<SvgIcon className="svg-skill-icon hover:text-navy-blue" label="TypeScript logo" d={typescriptIcon} viewBox="0 0 50 50" />}
+                            icon={
+                                <SvgIcon
+                                    className="svg-skill-icon hover:text-navy-blue"
+                                    label="TypeScript logo"
+                                    d={typescriptIcon}
+                                    viewBox="0 0 50 50"
+                                />
+                            }
                         />
                         <SkillItem
                             label="React.js"
-                            icon={<SvgIcon className="svg-skill-icon hover:text-sky-blue" label="React.js logo" d={reactIcon} viewBox="0 0 50 50" />}
+                            icon={
+                                <SvgIcon
+                                    className="svg-skill-icon hover:text-sky-blue"
+                                    label="React.js logo"
+                                    d={reactIcon}
+                                    viewBox="0 0 50 50"
+                                />
+                            }
                         />
                         <SkillItem
                             label="Next.js"
-                            icon={<SvgIcon className="svg-skill-icon hover:text-gray-500" label="Next.js logo" d={nextjsIcon} viewBox="0 0 48 48" />}
+                            icon={
+                                <SvgIcon
+                                    className="svg-skill-icon hover:text-gray-500"
+                                    label="Next.js logo"
+                                    d={nextjsIcon}
+                                    viewBox="0 0 48 48"
+                                />
+                            }
                         />
                         <SkillItem
                             label="Node.js"
-                            icon={<SvgIcon className="svg-skill-icon hover:text-may-green" label="Node.js logo" d={nodejsIcon} viewBox="0 0 32 32" />}
+                            icon={
+                                <SvgIcon
+                                    className="svg-skill-icon hover:text-may-green"
+                                    label="Node.js logo"
+                                    d={nodejsIcon}
+                                    viewBox="0 0 32 32"
+                                />
+                            }
                         />
                         <SkillItem
                             label="HTML"
-                            icon={<SvgIcon className="svg-skill-icon hover:text-orange" label="HTML logo" d={htmlIcon} viewBox="0 0 50 50" />}
+                            icon={
+                                <SvgIcon className="svg-skill-icon hover:text-orange" label="HTML logo" d={htmlIcon} viewBox="0 0 50 50" />
+                            }
                         />
                         <SkillItem
                             label="CSS"
-                            icon={<SvgIcon className="svg-skill-icon hover:text-royal-blue" label="CSS logo" d={cssIcon} viewBox="0 0 128 128" />}
+                            icon={
+                                <SvgIcon
+                                    className="svg-skill-icon hover:text-royal-blue"
+                                    label="CSS logo"
+                                    d={cssIcon}
+                                    viewBox="0 0 128 128"
+                                />
+                            }
                         />
                         <SkillItem
                             label="Sass"
@@ -76,11 +120,25 @@ const HomePage = () => {
                         />
                         <SkillItem
                             label="Git"
-                            icon={<SvgIcon className="svg-skill-icon hover:text-red-orange" label="Git logo" d={gitIcon} viewBox="0 0 50 50" />}
+                            icon={
+                                <SvgIcon
+                                    className="svg-skill-icon hover:text-red-orange"
+                                    label="Git logo"
+                                    d={gitIcon}
+                                    viewBox="0 0 50 50"
+                                />
+                            }
                         />
                         <SkillItem
                             label="BrightScript"
-                            icon={<SvgIcon className="svg-skill-icon hover:text-purple" label="BrightScript logo" d={rokuIcon} viewBox="0 0 24 24" />}
+                            icon={
+                                <SvgIcon
+                                    className="svg-skill-icon hover:text-purple"
+                                    label="BrightScript logo"
+                                    d={rokuIcon}
+                                    viewBox="0 0 24 24"
+                                />
+                            }
                         />
                     </ul>
                 </section>
