@@ -9,7 +9,6 @@ export enum TimelineItemType {
 
 interface ITimelineItem {
     date: string
-    children: React.ReactNode
     title: string
     type: TimelineItemType
 }
@@ -20,7 +19,7 @@ const typeToSymbol: Record<TimelineItemType, string> = {
     [TimelineItemType.Work]: '👨‍💻'
 }
 
-const TimelineItem = ({ children, date, title, type }: ITimelineItem) => {
+const TimelineItem = ({ children, date, title, type }: React.PropsWithChildren<ITimelineItem>) => {
     const dateFormat = new Intl.DateTimeFormat('en-GB', { year: 'numeric', month: 'long' })
     const dateString = dateFormat.format(new Date(date))
     const symbol = typeToSymbol[type]

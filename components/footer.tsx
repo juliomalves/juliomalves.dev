@@ -3,12 +3,11 @@ import Link from '@/components/link'
 import SvgIcon, { githubIcon, linkedinIcon, twitterIcon } from '@/components/svg-icon'
 
 interface FooterLinkProps {
-    children: React.ReactNode
     href: string
     label: string
 }
 
-const FooterLisItem = ({ children, href, label }: FooterLinkProps) => (
+const FooterLisItem = ({ children, href, label }: React.PropsWithChildren<FooterLinkProps>) => (
     <li className="p-4">
         <Link
             href={href}

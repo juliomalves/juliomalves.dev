@@ -41,7 +41,7 @@ interface ISvgIcon {
     viewBox: string
 }
 
-const SvgIcon = ({ className, color = 'currentColor', d, noFill = false, label, stroke = null, viewBox }: ISvgIcon) => {
+const SvgIcon = ({ className, color = 'currentColor', d, noFill = false, label, stroke, viewBox }: ISvgIcon) => {
     const fill = noFill ? 'none' : color
     const classNames = `inline-block${className ? ` ${className}` : ''}`
 
