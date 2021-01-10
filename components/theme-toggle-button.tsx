@@ -9,7 +9,7 @@ const ThemeToggleButton = () => {
 
     return (
         <button className="flex p-2 text-yellow-400 focus-outline hover:glow" onClick={toggleMode} aria-label={label}>
-            <SvgIcon className="w-5" label={iconLabel} d={icon} viewBox="0 0 512 512" />
+            <SvgIcon className="w-5" d={icon} title={iconLabel} viewBox="0 0 512 512" />
         </button>
     )
 }

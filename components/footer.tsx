@@ -27,13 +27,13 @@ const Footer = () => {
         <footer className="flex flex-col justify-center items-center w-full max-w-3xl mx-auto p-4">
             <ul className="flex items-center">
                 <FooterLisItem href="https://www.twitter.com/juli0malves" label="Twitter">
-                    <SvgIcon className="w-8 h-8" d={twitterIcon} label="Twitter logo" viewBox="0 0 32 32" />
+                    <SvgIcon className="w-8 h-8" d={twitterIcon} title="Twitter logo" viewBox="0 0 32 32" />
                 </FooterLisItem>
                 <FooterLisItem href="https://www.github.com/juliomalves" label="GitHub">
-                    <SvgIcon className="w-8 h-8" d={githubIcon} label="GitHub logo" viewBox="0 0 32 32" />
+                    <SvgIcon className="w-8 h-8" d={githubIcon} title="GitHub logo" viewBox="0 0 32 32" />
                 </FooterLisItem>
                 <FooterLisItem href="https://www.linkedin.com/in/juliomalves" label="LinkedIn">
-                    <SvgIcon className="w-8 h-8" d={linkedinIcon} label="LinkedIn logo" viewBox="0 0 32 32" />
+                    <SvgIcon className="w-8 h-8" d={linkedinIcon} title="LinkedIn logo" viewBox="0 0 32 32" />
                 </FooterLisItem>
             </ul>
             <p className="text-center text-sm">Julio Alves © {currentYear}</p>

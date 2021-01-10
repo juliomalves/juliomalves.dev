@@ -1,8 +1,9 @@
 import * as React from 'react'
+import type { SvgIconType } from '@/components/svg-icon'
 
 interface ISkillItem {
     label: string
-    icon: React.ReactNode
+    icon: React.ReactElement<SvgIconType>
 }
 
 const SkillItem = ({ label, icon }: ISkillItem) => (

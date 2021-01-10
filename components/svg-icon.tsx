@@ -35,21 +35,25 @@ interface ISvgIcon {
     className?: string
     color?: string
     d: string
+    hidden?: boolean
     noFill?: boolean
-    label: string
     stroke?: string
+    title?: string
     viewBox: string
 }
 
-const SvgIcon = ({ className, color = 'currentColor', d, noFill = false, label, stroke, viewBox }: ISvgIcon) => {
+const SvgIcon = ({ className, color = 'currentColor', d, hidden = false, noFill = false, stroke, title, viewBox }: ISvgIcon) => {
     const fill = noFill ? 'none' : color
     const classNames = `inline-block${className ? ` ${className}` : ''}`
 
     return (
-        <svg className={classNames} viewBox={viewBox} fill={fill} role="img" aria-label={label}>
+        <svg className={classNames} viewBox={viewBox} fill={fill} role="img" aria-hidden={hidden}>
+            {title && <title>{title}</title>}
             <path d={d} stroke={stroke} />
         </svg>
     )
 }
+
+export type SvgIconType = typeof SvgIcon
 
 export default SvgIcon
