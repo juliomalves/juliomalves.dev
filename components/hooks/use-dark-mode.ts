@@ -21,7 +21,7 @@ export const useDarkMode = ({ darkModeClass = 'dark', lightModeClass = 'light', 
     }, [])
 
     React.useEffect(() => {
-        window.localStorage.setItem(storageKey, isDarkMode ? 'dark' : 'light')
+        window.localStorage.setItem(storageKey, isDarkMode ? darkModeClass : lightModeClass)
         document.documentElement.classList.add(isDarkMode ? darkModeClass : lightModeClass)
         document.documentElement.classList.remove(isDarkMode ? lightModeClass : darkModeClass)
     }, [isDarkMode, darkModeClass, lightModeClass, storageKey])

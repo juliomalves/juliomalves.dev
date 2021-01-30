@@ -1,7 +1,7 @@
 import * as React from 'react'
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import NextDocument, { Html, Head, Main, NextScript } from 'next/document'
 
-class MyDocument extends Document {
+class Document extends NextDocument {
     render() {
         const isProduction = process.env.NODE_ENV === 'production'
 
@@ -62,4 +62,4 @@ class MyDocument extends Document {
     }
 }
 
-export default MyDocument
+export default Document
