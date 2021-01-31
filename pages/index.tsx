@@ -140,7 +140,7 @@ const HomePage = () => {
                             }
                         />
                         <SkillItem
-                            label="Tailwind CSS"
+                            label="TailwindCSS"
                             icon={
                                 <SvgIcon
                                     className="svg-skill-icon hover:text-cerulean-blue"
