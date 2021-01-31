@@ -13,6 +13,7 @@ import SvgIcon, {
     reactIcon,
     rokuIcon,
     sassIcon,
+    tailwindIcon,
     typescriptIcon
 } from '@/components/svg-icon'
 
@@ -139,13 +140,13 @@ const HomePage = () => {
                             }
                         />
                         <SkillItem
-                            label="Git"
+                            label="Tailwind CSS"
                             icon={
                                 <SvgIcon
-                                    className="svg-skill-icon hover:text-red-orange"
-                                    title="Git logo"
-                                    d={gitIcon}
-                                    viewBox="0 0 50 50"
+                                    className="svg-skill-icon hover:text-cerulean-blue"
+                                    title="Tailwind CSS logo"
+                                    d={tailwindIcon}
+                                    viewBox="0 0 64 64"
                                     hidden
                                 />
                             }

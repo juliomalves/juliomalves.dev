@@ -20,10 +20,10 @@ module.exports = {
             'navy-blue': '#007ACC',
             'royal-blue': '#2965F1',
             'sky-blue': '#61DBFB',
+            'cerulean-blue': '#06B6D4',
             green: '#00CC99',
             'may-green': '#3C873A',
             orange: '#E34C26',
-            'red-orange': '#F34F29',
             pink: '#CC6699',
             purple: '#6F1AB1'
         },
