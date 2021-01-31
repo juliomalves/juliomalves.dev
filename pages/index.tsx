@@ -5,7 +5,6 @@ import TimelineItem, { TimelineItemType } from '@/components/timeline-item'
 import Link from '@/components/link'
 import SvgIcon, {
     cssIcon,
-    gitIcon,
     htmlIcon,
     javascriptIcon,
     nextjsIcon,
