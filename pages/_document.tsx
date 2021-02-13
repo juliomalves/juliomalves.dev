@@ -12,29 +12,6 @@ class Document extends NextDocument {
                     <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180" />
                     <link rel="icon" href="favicon-16x16.png" sizes="16x16" type="image/png" />
                     <link rel="icon" href="favicon-32x32.png" sizes="32x32" type="image/png" />
-                    <script
-                        dangerouslySetInnerHTML={{
-                            __html: `
-                                (function() {
-                                    const storageKey = 'jma-theme';
-                                    const darkThemeClass = 'dark';
-                                    const lightThemeClass = 'light';
-                                    const prefersDarkColorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                                    const storedTheme = localStorage.getItem(storageKey);
-                                    function setTheme(isDarkTheme) {
-                                        document.documentElement.classList.add(isDarkTheme ? darkThemeClass : lightThemeClass);
-                                        document.documentElement.classList.remove(isDarkTheme ? lightThemeClass : darkThemeClass);
-                                    }
-                                    if (storedTheme) {
-                                        setTheme(storedTheme === darkThemeClass);
-                                    } else {
-                                        setTheme(prefersDarkColorScheme);
-                                        localStorage.setItem(storageKey, prefersDarkColorScheme ? darkThemeClass : lightThemeClass);
-                                    }
-                                })();
-                            `
-                        }}
-                    />
                     {isProduction && (
                         <>
                             <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_ANALYTICS_ID}`} />
