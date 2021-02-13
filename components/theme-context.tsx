@@ -1,5 +1,4 @@
 import * as React from 'react'
-import Head from 'next/head'
 
 export enum Theme {
     Light = 'light',
@@ -47,20 +46,14 @@ export const ThemeProvider = ({ storageKey = STORAGE_KEY, children }: React.Prop
         document.documentElement.classList.remove(theme === Theme.Dark ? Theme.Light : Theme.Dark)
     }, [theme, storageKey])
 
-    return (
-        <ThemeContext.Provider value={{ toggleTheme, theme }}>
-            <ThemeScript />
-            {children}
-        </ThemeContext.Provider>
-    )
+    return <ThemeContext.Provider value={{ toggleTheme, theme }}>{children}</ThemeContext.Provider>
 }
 
-const ThemeScript = () => (
-    <Head>
-        <script
-            key="theme-script"
-            dangerouslySetInnerHTML={{
-                __html: `
+export const ThemeScript = () => (
+    <script
+        key="theme-script"
+        dangerouslySetInnerHTML={{
+            __html: `
                     (function() {
                         const storageKey = '${STORAGE_KEY}';
                         const darkThemeClass = '${Theme.Dark}';
@@ -79,7 +72,6 @@ const ThemeScript = () => (
                         }
                     })();
                 `
-            }}
-        />
-    </Head>
+        }}
+    />
 )
