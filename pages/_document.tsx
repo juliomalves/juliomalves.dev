@@ -1,6 +1,5 @@
 import * as React from 'react'
 import NextDocument, { Html, Head, Main, NextScript } from 'next/document'
-import { ThemeScript } from '@/components/theme-context'
 
 class Document extends NextDocument {
     render() {
@@ -13,7 +12,6 @@ class Document extends NextDocument {
                     <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180" />
                     <link rel="icon" href="favicon-16x16.png" sizes="16x16" type="image/png" />
                     <link rel="icon" href="favicon-32x32.png" sizes="32x32" type="image/png" />
-                    <ThemeScript />
                     {isProduction && (
                         <>
                             <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_ANALYTICS_ID}`} />
