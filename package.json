@@ -33,7 +33,6 @@
     "next": "~10.0.4",
     "next-compose-plugins": "~2.2.1",
     "next-images": "~1.6.2",
-    "next-themes": "~0.0.10",
     "preact": "~10.5.7",
     "preact-render-to-string": "~5.1.12",
     "react": "github:preact-compat/react#1.0.0",
