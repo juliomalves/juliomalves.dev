@@ -32,7 +32,6 @@
   "dependencies": {
     "@prefresh/next": "~1.4.3",
     "next": "~10.0.4",
-    "next-compose-plugins": "~2.2.1",
     "next-images": "~1.7.0",
     "preact": "~10.5.7",
     "preact-render-to-string": "~5.1.12",
