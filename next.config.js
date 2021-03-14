@@ -1,5 +1,6 @@
 const withPrefresh = require('@prefresh/next')
 const withImages = require('next-images')
+const WebpackBar = require('webpackbar')
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
     enabled: process.env.ANALYZE_BUNDLE === 'true'
 })
@@ -56,7 +57,12 @@ const withPreact = (nextConfig = {}) => {
 module.exports = withImages(
     withBundleAnalyzer(
         withPreact({
-            poweredByHeader: false
+            poweredByHeader: false,
+            webpack: (config, { isServer }) => {
+                const name = isServer ? 'server' : 'client'
+                config.plugins.push(new WebpackBar({ name }))
+                return config
+            }
         })
     )
 )
