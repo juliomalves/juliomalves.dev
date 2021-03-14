@@ -30,9 +30,7 @@
     }
   },
   "dependencies": {
-    "@prefresh/next": "~1.4.5",
     "next": "~10.0.8",
-    "next-images": "~1.7.0",
     "preact": "~10.5.12",
     "preact-render-to-string": "~5.1.16",
     "react": "github:preact-compat/react#1.0.0",
@@ -41,6 +39,7 @@
   "devDependencies": {
     "@next/bundle-analyzer": "~10.0.8",
     "@next/eslint-plugin-next": "~10.0.8",
+    "@prefresh/next": "~1.4.5",
     "@testing-library/jest-dom": "~5.11.6",
     "@testing-library/preact": "~2.0.1",
     "@types/gtag.js": "~0.0.3",

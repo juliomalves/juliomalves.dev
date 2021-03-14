@@ -3,8 +3,6 @@ import Link from '@/components/link'
 import ThemeToggleButton from '@/components/theme-toggle-button'
 import { useHasMounted } from '@/components/hooks/use-has-mounted'
 
-import profileImg from '@/assets/images/profile-pic.jpg'
-
 const Header = () => {
     const hasMounted = useHasMounted()
 
@@ -14,7 +12,7 @@ const Header = () => {
                 <img
                     alt="Julio Alves"
                     className="w-12 h-auto border-2 border-neon-blue dark:border-green rounded-full"
-                    src={profileImg}
+                    src="/profile-pic.jpg"
                     width="48"
                     height="48"
                 />
