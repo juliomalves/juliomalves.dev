@@ -56,6 +56,9 @@ const withPreact = (nextConfig = {}) => {
 module.exports = withBundleAnalyzer(
     withPreact({
         poweredByHeader: false,
+        future: {
+            webpack5: true
+        },
         webpack: (config, { isServer }) => {
             const name = isServer ? 'server' : 'client'
             config.plugins.push(new WebpackBar({ name }))
