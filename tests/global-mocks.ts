@@ -20,9 +20,6 @@ Object.defineProperty(window, 'matchMedia', {
 jest.mock('next/router', () => ({
     ...mockedRouter,
     useRouter() {
-        return { ...mockedRouter, asPath: '/' }
-    },
-    withRouter() {
-        return { ...mockedRouter, asPath: '/' }
+        return mockedRouter
     }
 }))

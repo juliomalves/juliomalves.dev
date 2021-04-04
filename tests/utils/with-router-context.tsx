@@ -1,10 +1,10 @@
 import { Router } from 'next/router'
 
-const mockedRouter: Partial<Router> = {
+export const mockedRouter: Partial<Router> = {
     route: '',
     pathname: '',
     query: {},
-    asPath: '',
+    asPath: '/',
     push: async () => true,
     replace: async () => true,
     reload: () => null,
@@ -17,5 +17,3 @@ const mockedRouter: Partial<Router> = {
         emit: () => null
     }
 }
-
-export { mockedRouter }
