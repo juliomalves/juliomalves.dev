@@ -1,7 +1,7 @@
 import * as React from 'react'
 import Head from 'next/head'
 import SkillItem from '@/components/skill-item'
-import TimelineItem, { TimelineItemType } from '@/components/timeline-item'
+import TimelineItem from '@/components/timeline-item'
 import Link from '@/components/link'
 import SvgIcon, {
     cssIcon,
@@ -167,30 +167,30 @@ const HomePage = () => {
                 <section className={sectionClassName} aria-labelledby="timeline">
                     <h2 id="timeline">Timeline</h2>
                     <ul>
-                        <TimelineItem type={TimelineItemType.Work} date="2019-09-25" title="Joined ITV">
+                        <TimelineItem type="work" date="2019-09-25" title="Joined ITV">
                             <p>
                                 Got offered and accepted a senior position at ITV. Currently building React websites and a React Native app.
                             </p>
                         </TimelineItem>
-                        <TimelineItem type={TimelineItemType.Work} date="2017-01-05" title="Joined Accedo.tv">
+                        <TimelineItem type="work" date="2017-01-05" title="Joined Accedo.tv">
                             <p>
                                 Started at Accedo.tv where I contributed to several Node.js microservices and CTV app. Around the same time,
                                 decided to move closer to Central London, reducing my commute time by over <em>2 hours</em> a day!
                             </p>
                         </TimelineItem>
-                        <TimelineItem type={TimelineItemType.Work} date="2015-09-25" title="Joined TV App Agency">
+                        <TimelineItem type="work" date="2015-09-25" title="Joined TV App Agency">
                             <p>
                                 Managed to land my first job at TV App Agency, building apps for TVs and set-top boxes. Got to learn the
                                 niche programming language <em>BrightScript</em> along the way!
                             </p>
                         </TimelineItem>
-                        <TimelineItem type={TimelineItemType.Travel} date="2015-06-25" title="Moved to the UK">
+                        <TimelineItem type="travel" date="2015-06-25" title="Moved to the UK">
                             <p>
                                 Decided to move to London to look for my first real professional experience. BIGGER, <strong>bolder</strong>{' '}
                                 and way busier (in a good way!) than what I was accustomed to.
                             </p>
                         </TimelineItem>
-                        <TimelineItem type={TimelineItemType.Education} date="2015-01-15" title="Graduated from university">
+                        <TimelineItem type="education" date="2015-01-15" title="Graduated from university">
                             <p>
                                 Completed my master&apos;s degree in Software Enginering! Spent a few months working on research projects at
                                 my uni afterwards, where I delved into MATLAB for a bit.

@@ -1,11 +1,7 @@
 import * as React from 'react'
 import Emoji from '@/components/emoji'
 
-export enum TimelineItemType {
-    Education = 'education',
-    Travel = 'travel',
-    Work = 'work'
-}
+type TimelineItemType = 'education' | 'travel' | 'work'
 
 interface ITimelineItem {
     date: string
@@ -14,9 +10,9 @@ interface ITimelineItem {
 }
 
 const typeToSymbol: Record<TimelineItemType, string> = {
-    [TimelineItemType.Education]: '👨‍🎓',
-    [TimelineItemType.Travel]: '✈️',
-    [TimelineItemType.Work]: '👨‍💻'
+    education: '👨‍🎓',
+    travel: '✈️',
+    work: '👨‍💻'
 }
 
 const TimelineItem = ({ children, date, title, type }: React.PropsWithChildren<ITimelineItem>) => {
