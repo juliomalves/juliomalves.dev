@@ -56,6 +56,4 @@ const SvgIcon = ({ className, color = 'currentColor', d, hidden = false, noFill 
     )
 }
 
-export type SvgIconType = typeof SvgIcon
-
 export default SvgIcon
