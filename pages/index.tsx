@@ -46,7 +46,7 @@ const HomePage = () => {
                             label="JavaScript"
                             icon={
                                 <SvgIcon
-                                    className="svg-skill-icon hover:text-energy-yellow"
+                                    className="svg-skill-icon hover:text-[#F0DB4F]"
                                     title="JavaScript logo"
                                     d={javascriptIcon}
                                     viewBox="0 0 50 50"
@@ -58,7 +58,7 @@ const HomePage = () => {
                             label="TypeScript"
                             icon={
                                 <SvgIcon
-                                    className="svg-skill-icon hover:text-navy-blue"
+                                    className="svg-skill-icon hover:text-[#007ACC]"
                                     title="TypeScript logo"
                                     d={typescriptIcon}
                                     viewBox="0 0 50 50"
@@ -70,7 +70,7 @@ const HomePage = () => {
                             label="React.js"
                             icon={
                                 <SvgIcon
-                                    className="svg-skill-icon hover:text-sky-blue"
+                                    className="svg-skill-icon hover:text-[#61DBFB]"
                                     title="React.js logo"
                                     d={reactIcon}
                                     viewBox="0 0 50 50"
@@ -94,7 +94,7 @@ const HomePage = () => {
                             label="Node.js"
                             icon={
                                 <SvgIcon
-                                    className="svg-skill-icon hover:text-may-green"
+                                    className="svg-skill-icon hover:text-[#3C873A]"
                                     title="Node.js logo"
                                     d={nodejsIcon}
                                     viewBox="0 0 32 32"
@@ -106,7 +106,7 @@ const HomePage = () => {
                             label="HTML"
                             icon={
                                 <SvgIcon
-                                    className="svg-skill-icon hover:text-orange"
+                                    className="svg-skill-icon hover:text-[#E34C26]"
                                     title="HTML logo"
                                     d={htmlIcon}
                                     viewBox="0 0 50 50"
@@ -118,7 +118,7 @@ const HomePage = () => {
                             label="CSS"
                             icon={
                                 <SvgIcon
-                                    className="svg-skill-icon hover:text-royal-blue"
+                                    className="svg-skill-icon hover:text-[#2965F1]"
                                     title="CSS logo"
                                     d={cssIcon}
                                     viewBox="0 0 128 128"
@@ -130,7 +130,7 @@ const HomePage = () => {
                             label="Sass"
                             icon={
                                 <SvgIcon
-                                    className="svg-skill-icon hover:text-pink"
+                                    className="svg-skill-icon hover:text-[#CC6699]"
                                     title="Sass logo"
                                     d={sassIcon}
                                     viewBox="0 0 50 50"
@@ -142,7 +142,7 @@ const HomePage = () => {
                             label="TailwindCSS"
                             icon={
                                 <SvgIcon
-                                    className="svg-skill-icon hover:text-cerulean-blue"
+                                    className="svg-skill-icon hover:text-[#06B6D4]"
                                     title="Tailwind CSS logo"
                                     d={tailwindIcon}
                                     viewBox="0 0 64 64"
@@ -154,7 +154,7 @@ const HomePage = () => {
                             label="BrightScript"
                             icon={
                                 <SvgIcon
-                                    className="svg-skill-icon hover:text-purple"
+                                    className="svg-skill-icon hover:text-[#6F1AB1]"
                                     title="BrightScript logo"
                                     d={rokuIcon}
                                     viewBox="0 0 24 24"

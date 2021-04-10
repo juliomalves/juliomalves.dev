@@ -29,7 +29,7 @@
         @apply text-neon-blue dark:text-green;
     }
     ::selection {
-        @apply text-gray-100 bg-gray-400;
+        @apply text-gray-100 bg-neon-blue dark:bg-green;
     }
 
     @font-face {
@@ -66,6 +66,9 @@
     }
     .grid-wrapper > * {
         grid-column: 2;
+    }
+    .timeline {
+        @apply relative -z-1;
     }
     .timeline::before {
         background-color: currentColor;
