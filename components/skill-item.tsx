@@ -9,7 +9,7 @@ interface ISkillItem {
 }
 
 const SkillItem = ({ hoverClassName, label, icon }: ISkillItem) => {
-    const hoverClassNames = `transition-colors duration-200 group-hover:${hoverClassName}`
+    const hoverClassNames = `transition-colors duration-200 ${hoverClassName}`
     const textClassName = `text-center mt-2 mb-0 ${hoverClassNames}`
     const styledIcon = React.cloneElement(icon, {
         className: `${icon.props.className} ${hoverClassNames}`
