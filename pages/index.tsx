@@ -43,124 +43,60 @@ const HomePage = () => {
                     <p>Here are some of the technologies and tools I&apos;m proficient and comfortable with:</p>
                     <ul className="flex flex-wrap tablet:px-4">
                         <SkillItem
+                            hoverClassName="text-[#F0DB4F]"
                             label="JavaScript"
                             icon={
-                                <SvgIcon
-                                    className="svg-skill-icon hover:text-[#F0DB4F]"
-                                    title="JavaScript logo"
-                                    d={javascriptIcon}
-                                    viewBox="0 0 50 50"
-                                    hidden
-                                />
+                                <SvgIcon className="svg-skill-icon" title="JavaScript logo" d={javascriptIcon} viewBox="0 0 50 50" hidden />
                             }
                         />
                         <SkillItem
+                            hoverClassName="text-[#007ACC]"
                             label="TypeScript"
                             icon={
-                                <SvgIcon
-                                    className="svg-skill-icon hover:text-[#007ACC]"
-                                    title="TypeScript logo"
-                                    d={typescriptIcon}
-                                    viewBox="0 0 50 50"
-                                    hidden
-                                />
+                                <SvgIcon className="svg-skill-icon" title="TypeScript logo" d={typescriptIcon} viewBox="0 0 50 50" hidden />
                             }
                         />
                         <SkillItem
+                            hoverClassName="text-[#61DBFB]"
                             label="React.js"
-                            icon={
-                                <SvgIcon
-                                    className="svg-skill-icon hover:text-[#61DBFB]"
-                                    title="React.js logo"
-                                    d={reactIcon}
-                                    viewBox="0 0 50 50"
-                                    hidden
-                                />
-                            }
+                            icon={<SvgIcon className="svg-skill-icon" title="React.js logo" d={reactIcon} viewBox="0 0 50 50" hidden />}
                         />
                         <SkillItem
+                            hoverClassName="text-gray-500"
                             label="Next.js"
-                            icon={
-                                <SvgIcon
-                                    className="svg-skill-icon hover:text-gray-500"
-                                    title="Next.js logo"
-                                    d={nextjsIcon}
-                                    viewBox="0 0 48 48"
-                                    hidden
-                                />
-                            }
+                            icon={<SvgIcon className="svg-skill-icon" title="Next.js logo" d={nextjsIcon} viewBox="0 0 48 48" hidden />}
                         />
                         <SkillItem
+                            hoverClassName="text-[#3C873A]"
                             label="Node.js"
-                            icon={
-                                <SvgIcon
-                                    className="svg-skill-icon hover:text-[#3C873A]"
-                                    title="Node.js logo"
-                                    d={nodejsIcon}
-                                    viewBox="0 0 32 32"
-                                    hidden
-                                />
-                            }
+                            icon={<SvgIcon className="svg-skill-icon" title="Node.js logo" d={nodejsIcon} viewBox="0 0 32 32" hidden />}
                         />
                         <SkillItem
+                            hoverClassName="text-[#E34C26]"
                             label="HTML"
-                            icon={
-                                <SvgIcon
-                                    className="svg-skill-icon hover:text-[#E34C26]"
-                                    title="HTML logo"
-                                    d={htmlIcon}
-                                    viewBox="0 0 50 50"
-                                    hidden
-                                />
-                            }
+                            icon={<SvgIcon className="svg-skill-icon" title="HTML logo" d={htmlIcon} viewBox="0 0 50 50" hidden />}
                         />
                         <SkillItem
+                            hoverClassName="text-[#2965F1]"
                             label="CSS"
-                            icon={
-                                <SvgIcon
-                                    className="svg-skill-icon hover:text-[#2965F1]"
-                                    title="CSS logo"
-                                    d={cssIcon}
-                                    viewBox="0 0 128 128"
-                                    hidden
-                                />
-                            }
+                            icon={<SvgIcon className="svg-skill-icon" title="CSS logo" d={cssIcon} viewBox="0 0 128 128" hidden />}
                         />
                         <SkillItem
+                            hoverClassName="text-[#CC6699]"
                             label="Sass"
-                            icon={
-                                <SvgIcon
-                                    className="svg-skill-icon hover:text-[#CC6699]"
-                                    title="Sass logo"
-                                    d={sassIcon}
-                                    viewBox="0 0 50 50"
-                                    hidden
-                                />
-                            }
+                            icon={<SvgIcon className="svg-skill-icon" title="Sass logo" d={sassIcon} viewBox="0 0 50 50" hidden />}
                         />
                         <SkillItem
+                            hoverClassName="text-[#06B6D4]"
                             label="TailwindCSS"
                             icon={
-                                <SvgIcon
-                                    className="svg-skill-icon hover:text-[#06B6D4]"
-                                    title="Tailwind CSS logo"
-                                    d={tailwindIcon}
-                                    viewBox="0 0 64 64"
-                                    hidden
-                                />
+                                <SvgIcon className="svg-skill-icon" title="Tailwind CSS logo" d={tailwindIcon} viewBox="0 0 64 64" hidden />
                             }
                         />
                         <SkillItem
+                            hoverClassName="text-[#6F1AB1]"
                             label="BrightScript"
-                            icon={
-                                <SvgIcon
-                                    className="svg-skill-icon hover:text-[#6F1AB1]"
-                                    title="BrightScript logo"
-                                    d={rokuIcon}
-                                    viewBox="0 0 24 24"
-                                    hidden
-                                />
-                            }
+                            icon={<SvgIcon className="svg-skill-icon" title="BrightScript logo" d={rokuIcon} viewBox="0 0 24 24" hidden />}
                         />
                     </ul>
                 </section>
