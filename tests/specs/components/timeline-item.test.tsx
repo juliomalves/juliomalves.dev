@@ -1,10 +1,10 @@
 import * as React from 'react'
 import { render, screen, within } from '@testing-library/preact'
-import TimelineItem, { TimelineItemType } from '@/components/timeline-item'
+import TimelineItem from '@/components/timeline-item'
 
 const renderComponent = () =>
     render(
-        <TimelineItem title="Item 1" date="2020-01-01T12:00:00Z" type={TimelineItemType.Education}>
+        <TimelineItem title="Item 1" date="2020-01-01T12:00:00Z" type="education">
             <p>Item content</p>
         </TimelineItem>
     )
