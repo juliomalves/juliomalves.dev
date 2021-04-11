@@ -3,11 +3,11 @@ import { render, screen, within } from '@testing-library/preact'
 import Header from '@/components/header'
 
 describe('GIVEN a <Header />', () => {
-    it('THEN should render its children components', () => {
+    it('THEN should render its children components', async () => {
         render(<Header />)
-        const headerElement = screen.getByRole('banner')
-        expect(within(headerElement).getByLabelText('juliomalves.dev')).toBeInTheDocument()
-        expect(within(headerElement).getByRole('img', { name: 'Julio Alves' })).toBeInTheDocument()
-        expect(within(headerElement).getByLabelText('Dark mode')).toBeInTheDocument()
+        const header = within(screen.getByRole('banner'))
+        expect(await header.findByLabelText('Dark mode')).toBeInTheDocument()
+        expect(header.getByLabelText('juliomalves.dev')).toBeInTheDocument()
+        expect(header.getByRole('img', { name: 'Julio Alves' })).toBeInTheDocument()
     })
 })
