@@ -5,8 +5,8 @@ import Page404 from '@/pages/404'
 describe('GIVEN a <Page404 />', () => {
     it('THEN should render its children components', () => {
         render(<Page404 />)
-        const mainElement = screen.getByRole('main')
-        expect(within(mainElement).getByLabelText('Page Not Found')).toBeInTheDocument()
-        expect(within(mainElement).getByRole('link', { name: 'Go back home' })).toBeInTheDocument()
+        const main = within(screen.getByRole('main'))
+        expect(main.getByLabelText('Page Not Found')).toBeInTheDocument()
+        expect(main.getByRole('link', { name: 'Go back home' })).toBeInTheDocument()
     })
 })

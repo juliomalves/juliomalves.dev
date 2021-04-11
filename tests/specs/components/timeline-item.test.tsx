@@ -12,9 +12,9 @@ const renderComponent = () =>
 describe('GIVEN a <TimelineItem />', () => {
     it('THEN should render its children components', () => {
         renderComponent()
-        const listItemElement = screen.getByRole('listitem')
-        expect(within(listItemElement).getByText('January 2020')).toBeInTheDocument()
-        expect(within(listItemElement).getByRole('heading', { name: 'Item 1 education' })).toBeInTheDocument()
-        expect(within(listItemElement).getByText('Item content')).toBeInTheDocument()
+        const listItem = within(screen.getByRole('listitem'))
+        expect(listItem.getByText('January 2020')).toBeInTheDocument()
+        expect(listItem.getByRole('heading', { name: 'Item 1 education' })).toBeInTheDocument()
+        expect(listItem.getByText('Item content')).toBeInTheDocument()
     })
 })

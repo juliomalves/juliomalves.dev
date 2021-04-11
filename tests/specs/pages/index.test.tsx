@@ -5,10 +5,10 @@ import HomePage from '@/pages/index'
 describe('GIVEN a <HomePage />', () => {
     it('THEN should render its children components', () => {
         render(<HomePage />)
-        const mainElement = screen.getByRole('main')
-        expect(within(mainElement).getByLabelText('Summary')).toBeInTheDocument()
-        expect(within(mainElement).getByLabelText('Tech Skills')).toBeInTheDocument()
-        expect(within(mainElement).getByLabelText('Timeline')).toBeInTheDocument()
-        expect(within(mainElement).getByLabelText('Contact')).toBeInTheDocument()
+        const main = within(screen.getByRole('main'))
+        expect(main.getByLabelText('Summary')).toBeInTheDocument()
+        expect(main.getByLabelText('Tech Skills')).toBeInTheDocument()
+        expect(main.getByLabelText('Timeline')).toBeInTheDocument()
+        expect(main.getByLabelText('Contact')).toBeInTheDocument()
     })
 })
