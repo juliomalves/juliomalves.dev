@@ -12,6 +12,9 @@ class Document extends NextDocument {
                     <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180" />
                     <link rel="icon" href="favicon-16x16.png" sizes="16x16" type="image/png" />
                     <link rel="icon" href="favicon-32x32.png" sizes="32x32" type="image/png" />
+                    <link rel="preload" href="/fonts/lato-regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+                    <link rel="preload" href="/fonts/lato-regular-italic.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+                    <link rel="preload" href="/fonts/lato-bold.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
                     <script
                         dangerouslySetInnerHTML={{
                             __html: `
