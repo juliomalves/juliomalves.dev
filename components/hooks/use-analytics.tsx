@@ -2,7 +2,7 @@ import * as React from 'react'
 import { useRouter } from 'next/router'
 import { pageView } from '@/helpers/analytics'
 
-export const useGoogleAnalytics = () => {
+export const useAnalytics = () => {
     const { events } = useRouter()
 
     React.useEffect(() => {
