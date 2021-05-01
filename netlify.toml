@@ -4,4 +4,4 @@
         X-Frame-Options = "DENY"
         X-XSS-Protection = "1; mode=block"
         X-Content-Type-Options = "nosniff"
-        Content-Security-Policy = "script-src 'self' 'sha256-g/3BALveGEpdkCkH2y/77h1LGKA+x2MiC79foTHfnso=' 'sha256-9RYbJifUPerssoMLMeQ+czknyHjirMOD3crbk0VzmAo=' www.googletagmanager.com; object-src 'none'"
+        Content-Security-Policy = "script-src 'self' 'sha256-8Sc2UP+wX/KU1Ge3PbQoEcfpOfvZa9emmYQfjWFoetc=' 'sha256-H49byqLBop1/69BtAwQvFkr1vKIboq/Gj9bnZhxyOhU=' www.googletagmanager.com; object-src 'none'"
