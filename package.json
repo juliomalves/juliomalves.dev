@@ -25,15 +25,15 @@
     "check": "npm run typecheck && npm run lint"
   },
   "dependencies": {
-    "next": "~10.1.3",
+    "next": "~10.2.0",
     "preact": "~10.5.12",
     "preact-render-to-string": "~5.1.16",
     "react": "github:preact-compat/react#1.0.0",
     "react-dom": "github:preact-compat/react-dom#1.0.0"
   },
   "devDependencies": {
-    "@next/bundle-analyzer": "~10.1.3",
-    "@next/eslint-plugin-next": "~10.1.3",
+    "@next/bundle-analyzer": "~10.2.0",
+    "@next/eslint-plugin-next": "~10.2.0",
     "@prefresh/next": "~1.4.6",
     "@testing-library/jest-dom": "~5.12.0",
     "@testing-library/preact": "~2.0.1",
