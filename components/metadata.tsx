@@ -1,7 +1,6 @@
 import * as React from 'react'
 import Head from 'next/head'
 
-const isProduction = process.env.NODE_ENV === 'production'
 const authorName = 'Julio Alves'
 export const title = `${authorName} | Software Engineer`
 const description = 'Frontend developer experienced in building web-based applications for all kinds of devices.'
@@ -56,23 +55,6 @@ const Metadata = () => (
                 `
             }}
         />
-        {isProduction && (
-            <>
-                <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_ANALYTICS_ID}`} />
-                <script
-                    dangerouslySetInnerHTML={{
-                        __html: `
-                            window.dataLayer = window.dataLayer || [];
-                            function gtag(){ dataLayer.push(arguments); }
-                            gtag('js', new Date());
-                            gtag('config', '${process.env.NEXT_PUBLIC_ANALYTICS_ID}', {
-                                page_path: window.location.pathname,
-                            });
-                        `
-                    }}
-                />
-            </>
-        )}
     </Head>
 )
 
