@@ -1,10 +1,15 @@
 import * as React from 'react'
 import { render, screen, within } from '@testing-library/preact'
 import Header from '@/components/header'
+import { ThemeProvider } from '@/components/contexts/theme'
 
 describe('GIVEN a <Header />', () => {
     it('THEN should render its children components', async () => {
-        render(<Header />)
+        render(
+            <ThemeProvider>
+                <Header />
+            </ThemeProvider>
+        )
         const header = within(screen.getByRole('banner'))
         expect(await header.findByLabelText('Dark mode')).toBeInTheDocument()
         expect(header.getByLabelText('juliomalves.dev')).toBeInTheDocument()
