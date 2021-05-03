@@ -9,13 +9,13 @@ interface IAnalyticsProvider {
     children: React.ReactNode
 }
 
-export type AnalyticsContext = {
+interface IAnalyticsContext {
     sendEvent: typeof event
 }
 
-const Analytics = React.createContext<AnalyticsContext>(null)
+const AnalyticsContext = React.createContext<IAnalyticsContext>(null)
 
-export const useAnalytics = () => React.useContext<AnalyticsContext>(Analytics)
+export const useAnalytics = () => React.useContext<IAnalyticsContext>(AnalyticsContext)
 
 export const AnalyticsProvider = ({ children }: IAnalyticsProvider) => {
     const { events } = useRouter()
@@ -29,7 +29,7 @@ export const AnalyticsProvider = ({ children }: IAnalyticsProvider) => {
     }, [events])
 
     return (
-        <Analytics.Provider value={{ sendEvent: event }}>
+        <AnalyticsContext.Provider value={{ sendEvent: event }}>
             {isProduction && (
                 <Head>
                     <script key="gtag" async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_ANALYTICS_ID}`} />
@@ -49,6 +49,6 @@ export const AnalyticsProvider = ({ children }: IAnalyticsProvider) => {
                 </Head>
             )}
             {children}
-        </Analytics.Provider>
+        </AnalyticsContext.Provider>
     )
 }
