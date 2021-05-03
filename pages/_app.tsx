@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { AppProps } from 'next/app'
 import { AnalyticsProvider } from '@/components/contexts/analytics'
+import { ThemeProvider } from '@/components/contexts/theme'
 import Metadata from '@/components/metadata'
 import Header from '@/components/header'
 import Footer from '@/components/footer'
@@ -12,7 +13,9 @@ const App = ({ Component, pageProps }: AppProps) => {
         <>
             <Metadata />
             <AnalyticsProvider>
-                <Header />
+                <ThemeProvider>
+                    <Header />
+                </ThemeProvider>
                 <Component {...pageProps} />
                 <Footer />
             </AnalyticsProvider>
