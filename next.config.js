@@ -14,7 +14,7 @@ const withPreact = (nextConfig = {}) => {
                 if (splitChunks) {
                     const cacheGroups = splitChunks.cacheGroups
                     const test = /[\\/]node_modules[\\/](preact|preact-render-to-string|preact-context-provider)[\\/]/
-                    if (cacheGroups.framework) {
+                    if (cacheGroups && cacheGroups.framework) {
                         cacheGroups.preact = { ...cacheGroups.framework, test }
                         // Merge the 2 small commons+framework chunks
                         cacheGroups.commons.name = 'framework'
