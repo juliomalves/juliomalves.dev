@@ -11,10 +11,10 @@ const withPreact = (nextConfig = {}) => {
                 const { dev, isServer } = options
                 // Move Preact into the framework chunk instead of duplicating in routes
                 const splitChunks = config.optimization && config.optimization.splitChunks
-                if (splitChunks) {
+                if (splitChunks && splitChunks.cacheGroups) {
                     const cacheGroups = splitChunks.cacheGroups
                     const test = /[\\/]node_modules[\\/](preact|preact-render-to-string|preact-context-provider)[\\/]/
-                    if (cacheGroups && cacheGroups.framework) {
+                    if (cacheGroups.framework) {
                         cacheGroups.preact = { ...cacheGroups.framework, test }
                         // Merge the 2 small commons+framework chunks
                         cacheGroups.commons.name = 'framework'
