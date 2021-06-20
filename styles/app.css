@@ -61,28 +61,16 @@
 
 @layer utilities {
     .grid-wrapper {
-        display: grid;
-        grid-template-columns: 1fr min(75ch, 100%) 1fr;
+        @apply grid grid-cols-[1fr,min(75ch,100%),1fr];
     }
     .grid-wrapper > * {
         grid-column: 2;
     }
-    .timeline {
-        @apply relative -z-1;
-    }
-    .timeline::before {
-        background-color: currentColor;
-        content: '';
-        height: 100%;
-        width: 2px;
-        position: absolute;
-        left: 0.45em;
-    }
     .min-h-content {
-        min-height: calc(100vh - 13.25rem);
+        @apply min-h-[calc(100vh-13.25rem)];
     }
     .focus-outline {
-        @apply focus:outline-none focus:ring-2 focus:ring-opacity-60 focus:ring-neon-blue dark:focus:ring-green;
+        @apply focus:outline-none focus:ring-2 focus:ring-neon-blue dark:focus:ring-green;
     }
     .svg-skill-icon {
         @apply inline-block w-12 tablet:w-16;
