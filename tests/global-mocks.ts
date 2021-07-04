@@ -1,7 +1,11 @@
 import '@testing-library/jest-dom/extend-expect'
+import { loadEnvConfig } from '@next/env'
 import { mockedRouter } from '@/tests/utils/with-router-context'
 
-// Mock `window.matcMedia()` which is not implemented by JSDOM.
+// Load environment variables the same way Next.js does
+loadEnvConfig(process.cwd())
+
+// Mock `window.matchMedia()` which is not implemented by JSDOM.
 // https://jestjs.io/docs/en/manual-mocks#mocking-methods-which-are-not-implemented-in-jsdom
 Object.defineProperty(window, 'matchMedia', {
     writable: true,
