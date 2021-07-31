@@ -11,7 +11,7 @@ interface IThemeContext {
     theme: Theme
 }
 
-export const ThemeContext = React.createContext<IThemeContext>({
+const ThemeContext = React.createContext<IThemeContext>({
     theme: 'light',
     toggleTheme: undefined
 })
