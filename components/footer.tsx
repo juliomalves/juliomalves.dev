@@ -1,6 +1,6 @@
 import * as React from 'react'
 import Link from '@/components/link'
-import SvgIcon, { githubIcon, linkedinIcon, twitterIcon } from '@/components/svg-icon'
+import SvgIcon, { githubIcon, linkedinIcon, twitterIcon, stackoverflowIcon } from '@/components/svg-icon'
 
 interface FooterLinkProps {
     href: string
@@ -31,6 +31,9 @@ const Footer = () => {
                 </FooterLisItem>
                 <FooterLisItem href="https://www.github.com/juliomalves" label="GitHub">
                     <SvgIcon className="w-8 h-8" d={githubIcon} title="GitHub logo" viewBox="0 0 32 32" />
+                </FooterLisItem>
+                <FooterLisItem href="https://www.stackoverflow.com/users/1870780/juliomalves" label="Stack Overflow">
+                    <SvgIcon className="w-8 h-8" d={stackoverflowIcon} title="Stack Overflow logo" viewBox="-5 -4 32 32" />
                 </FooterLisItem>
                 <FooterLisItem href="https://www.linkedin.com/in/juliomalves" label="LinkedIn">
                     <SvgIcon className="w-8 h-8" d={linkedinIcon} title="LinkedIn logo" viewBox="0 0 32 32" />
