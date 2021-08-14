@@ -21,7 +21,7 @@ const FooterLisItem = ({ children, href, label }: React.PropsWithChildren<Footer
 )
 
 const Footer = () => {
-    const currentYear = new Date().getFullYear()
+    const currentYear = new Date().getUTCFullYear()
 
     return (
         <footer className="flex flex-col justify-center items-center w-full max-w-3xl mx-auto p-4">
