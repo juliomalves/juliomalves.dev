@@ -6,6 +6,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 
 module.exports = withBundleAnalyzer(
     withPreact({
+        reactStrictMode: true,
         poweredByHeader: false,
         webpack: (config, { isServer }) => {
             const name = isServer ? 'server' : 'client'
