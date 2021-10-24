@@ -20,7 +20,7 @@
     "start": "next start",
     "typecheck": "tsc --pretty --noEmit",
     "format": "prettier --write \"**/*.{js,ts,tsx}\"",
-    "lint": "eslint './**/*.{ts,tsx}'",
+    "lint": "eslint './**/*.{js,ts,tsx}'",
     "test": "jest",
     "check": "npm run typecheck && npm run lint"
   },
