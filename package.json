@@ -37,7 +37,7 @@
     "@testing-library/jest-dom": "~5.14.1",
     "@testing-library/preact": "~2.0.1",
     "@types/gtag.js": "~0.0.7",
-    "@types/node": "~16.11.4",
+    "@types/node": "~16.11.6",
     "@types/react": "~17.0.2",
     "@typescript-eslint/eslint-plugin": "~5.2.0",
     "@typescript-eslint/parser": "~5.2.0",
