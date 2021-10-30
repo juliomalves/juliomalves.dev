@@ -1,10 +1,12 @@
-const withPreact = require('next-plugin-preact')
-const WebpackBar = require('webpackbar')
-const withBundleAnalyzer = require('@next/bundle-analyzer')({
+import withPreact from 'next-plugin-preact'
+import WebpackBar from 'webpackbar'
+import nextBundleAnalyzer from '@next/bundle-analyzer'
+
+const withBundleAnalyzer = nextBundleAnalyzer({
     enabled: process.env.ANALYZE_BUNDLE === 'true'
 })
 
-module.exports = withBundleAnalyzer(
+export default withBundleAnalyzer(
     withPreact({
         reactStrictMode: true,
         poweredByHeader: false,

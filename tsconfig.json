@@ -25,7 +25,8 @@
     },
     "typeRoots": [
       "node_modules/@types"
-    ]
+    ],
+    "incremental": false
   },
   "exclude": [
     "node_modules",
