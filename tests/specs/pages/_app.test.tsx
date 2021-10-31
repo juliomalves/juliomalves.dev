@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Router as NextRouter } from 'next/router'
+import type { Router as NextRouter } from 'next/router'
 import { render, screen } from '@testing-library/preact'
 import App from '@/pages/_app'
 import { mockedRouter } from '@/tests/utils/with-router-context'

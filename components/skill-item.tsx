@@ -1,6 +1,6 @@
 import * as React from 'react'
 import type { GetComponentProps } from '@/helpers/types'
-import SvgIcon from '@/components/svg-icon'
+import type SvgIcon from '@/components/svg-icon'
 
 interface ISkillItem {
     hoverClassName: string

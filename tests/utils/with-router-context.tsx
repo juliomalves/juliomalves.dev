@@ -1,4 +1,4 @@
-import { Router } from 'next/router'
+import type { Router } from 'next/router'
 
 export const mockedRouter: Partial<Router> = {
     route: '',
