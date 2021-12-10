@@ -68,10 +68,7 @@
     .svg-skill-icon {
         @apply inline-block w-12 tablet:w-16;
     }
-
-    @variants hover {
-        .glow {
-            filter: drop-shadow(0px 0px 6px);
-        }
+    .glow {
+        filter: drop-shadow(0px 0px 6px);
     }
 }
