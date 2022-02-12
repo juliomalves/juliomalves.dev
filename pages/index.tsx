@@ -3,18 +3,7 @@ import Head from 'next/head'
 import SkillItem from '@/components/skill-item'
 import TimelineItem from '@/components/timeline-item'
 import Link from '@/components/link'
-import SvgIcon, {
-    cssIcon,
-    htmlIcon,
-    javascriptIcon,
-    nextjsIcon,
-    nodejsIcon,
-    reactIcon,
-    rokuIcon,
-    sassIcon,
-    tailwindIcon,
-    typescriptIcon
-} from '@/components/svg-icon'
+import SvgIcon from '@/components/svg-icon'
 
 const HomePage = () => {
     const sectionClassName = 'flex flex-col px-4 tablet:px-8'
@@ -45,58 +34,52 @@ const HomePage = () => {
                         <SkillItem
                             hoverClassName="group-hover:text-[#F0DB4F]"
                             label="JavaScript"
-                            icon={
-                                <SvgIcon className="svg-skill-icon" title="JavaScript logo" d={javascriptIcon} viewBox="0 0 50 50" hidden />
-                            }
+                            icon={<SvgIcon className="svg-skill-icon" title="JavaScript logo" id="icon-javascript" hidden />}
                         />
                         <SkillItem
                             hoverClassName="group-hover:text-[#007ACC]"
                             label="TypeScript"
-                            icon={
-                                <SvgIcon className="svg-skill-icon" title="TypeScript logo" d={typescriptIcon} viewBox="0 0 50 50" hidden />
-                            }
+                            icon={<SvgIcon className="svg-skill-icon" title="TypeScript logo" id="icon-typescript" hidden />}
                         />
                         <SkillItem
                             hoverClassName="group-hover:text-[#61DBFB]"
                             label="React.js"
-                            icon={<SvgIcon className="svg-skill-icon" title="React.js logo" d={reactIcon} viewBox="0 0 50 50" hidden />}
+                            icon={<SvgIcon className="svg-skill-icon" title="React.js logo" id="icon-react" hidden />}
                         />
                         <SkillItem
                             hoverClassName="group-hover:text-gray-500"
                             label="Next.js"
-                            icon={<SvgIcon className="svg-skill-icon" title="Next.js logo" d={nextjsIcon} viewBox="0 0 48 48" hidden />}
+                            icon={<SvgIcon className="svg-skill-icon" title="Next.js logo" id="icon-nextjs" hidden />}
                         />
                         <SkillItem
                             hoverClassName="group-hover:text-[#3C873A]"
                             label="Node.js"
-                            icon={<SvgIcon className="svg-skill-icon" title="Node.js logo" d={nodejsIcon} viewBox="0 0 32 32" hidden />}
+                            icon={<SvgIcon className="svg-skill-icon" title="Node.js logo" id="icon-nodejs" hidden />}
                         />
                         <SkillItem
                             hoverClassName="group-hover:text-[#E34C26]"
                             label="HTML"
-                            icon={<SvgIcon className="svg-skill-icon" title="HTML logo" d={htmlIcon} viewBox="0 0 50 50" hidden />}
+                            icon={<SvgIcon className="svg-skill-icon" title="HTML logo" id="icon-html" hidden />}
                         />
                         <SkillItem
                             hoverClassName="group-hover:text-[#2965F1]"
                             label="CSS"
-                            icon={<SvgIcon className="svg-skill-icon" title="CSS logo" d={cssIcon} viewBox="0 0 128 128" hidden />}
+                            icon={<SvgIcon className="svg-skill-icon" title="CSS logo" id="icon-css" hidden />}
                         />
                         <SkillItem
                             hoverClassName="group-hover:text-[#CC6699]"
                             label="Sass"
-                            icon={<SvgIcon className="svg-skill-icon" title="Sass logo" d={sassIcon} viewBox="0 0 50 50" hidden />}
+                            icon={<SvgIcon className="svg-skill-icon" title="Sass logo" id="icon-sass" hidden />}
                         />
                         <SkillItem
                             hoverClassName="group-hover:text-[#06B6D4]"
                             label="TailwindCSS"
-                            icon={
-                                <SvgIcon className="svg-skill-icon" title="Tailwind CSS logo" d={tailwindIcon} viewBox="0 0 64 64" hidden />
-                            }
+                            icon={<SvgIcon className="svg-skill-icon" title="Tailwind CSS logo" id="icon-tailwindcss" hidden />}
                         />
                         <SkillItem
                             hoverClassName="group-hover:text-[#6F1AB1]"
                             label="BrightScript"
-                            icon={<SvgIcon className="svg-skill-icon" title="BrightScript logo" d={rokuIcon} viewBox="0 0 24 24" hidden />}
+                            icon={<SvgIcon className="svg-skill-icon" title="BrightScript logo" id="icon-brightscript" hidden />}
                         />
                     </ul>
                 </section>

@@ -15,6 +15,7 @@ const Metadata = () => (
         <link rel="icon" href="favicon-32x32.png" sizes="32x32" type="image/png" />
         <link rel="preload" href="/fonts/lato-regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <link rel="preload" href="/fonts/lato-bold.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" href="/sprite.svg" as="image/svg+xml" crossOrigin="anonymous" />
         <title>{title}</title>
         <meta name="author" content={authorName} />
         <meta name="description" content={description} />
