@@ -1,14 +1,9 @@
-const path = require('path')
+const nextJest = require('next/jest')
 
-module.exports = {
-    globals: {
-        'ts-jest': {
-            tsconfig: 'tsconfig.jest.json'
-        }
-    },
-    preset: 'ts-jest',
+const nextJestConfig = nextJest({ dir: './' })
+
+module.exports = nextJestConfig({
     testEnvironment: 'jsdom',
-    rootDir: path.resolve(__dirname, './'),
     setupFilesAfterEnv: ['<rootDir>/tests/global-mocks.ts'],
     moduleFileExtensions: ['js', 'ts', 'tsx', 'json'],
     testMatch: ['<rootDir>/tests/specs/**/*.test.{ts,tsx}'],
@@ -16,8 +11,6 @@ module.exports = {
         '^react$': 'preact/compat',
         '^react-dom/test-utils$': 'preact/test-utils',
         '^react-dom$': 'preact/compat',
-        '\\.(css)$': 'identity-obj-proxy',
-        '\\.(png|svg|pdf|jpg|jpeg)$': '<rootDir>/tests/mocks/fileMock.js',
         '^@/(.*)': '<rootDir>/$1'
     },
     collectCoverageFrom: ['<rootDir>/components/**/*.{ts,tsx}', '<rootDir>/helpers/**/*.{ts,tsx}', '<rootDir>/pages/**/*.{ts,tsx}'],
@@ -31,4 +24,4 @@ module.exports = {
             statements: 80
         }
     }
-}
+})
