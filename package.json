@@ -26,7 +26,7 @@
     "check": "npm run typecheck && npm run lint"
   },
   "dependencies": {
-    "next": "~12.0.9",
+    "next": "~12.1.0",
     "preact": "~10.6.4",
     "preact-render-to-string": "~5.1.19",
     "react": "npm:@preact/compat@17.0.3",
