@@ -9,6 +9,7 @@ const withBundleAnalyzer = nextBundleAnalyzer({
 export default withBundleAnalyzer(
     withPreact({
         reactStrictMode: true,
+        swcMinify: true,
         poweredByHeader: false,
         webpack: (config, { isServer }) => {
             const name = isServer ? 'server' : 'client'
