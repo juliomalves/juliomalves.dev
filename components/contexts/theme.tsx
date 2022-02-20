@@ -4,7 +4,7 @@ import Head from 'next/head'
 const STORAGE_KEY = 'jma-theme'
 const MEDIA_QUERY = '(prefers-color-scheme: dark)'
 
-type Theme = 'light' | 'dark'
+export type Theme = 'light' | 'dark'
 
 interface IThemeContext {
     toggleTheme: () => void
@@ -27,8 +27,8 @@ export const ThemeProvider = ({ storageKey = STORAGE_KEY, children }: React.Prop
         if (typeof window === 'undefined') {
             return undefined
         }
-        const storedMode = window.localStorage.getItem(storageKey)
-        return !storedMode ? (window.matchMedia(MEDIA_QUERY).matches ? 'dark' : 'light') : (storedMode as Theme)
+        const storedMode = window.localStorage.getItem(storageKey) as Theme
+        return !storedMode ? (window.matchMedia(MEDIA_QUERY).matches ? 'dark' : 'light') : storedMode
     })
 
     const toggleTheme = () => setTheme(theme === 'dark' ? 'light' : 'dark')

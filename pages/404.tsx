@@ -1,9 +1,10 @@
 import * as React from 'react'
+import type { NextPage } from 'next'
 import Head from 'next/head'
 import Link from '@/components/link'
 import { title } from '@/components/metadata'
 
-const Page404 = () => {
+const Page404: NextPage = () => {
     return (
         <>
             <Head>

@@ -1,11 +1,12 @@
 import * as React from 'react'
+import type { NextPage } from 'next'
 import Head from 'next/head'
 import SkillItem from '@/components/skill-item'
 import TimelineItem from '@/components/timeline-item'
 import Link from '@/components/link'
 import SvgIcon from '@/components/svg-icon'
 
-const HomePage = () => {
+const HomePage: NextPage = () => {
     const sectionClassName = 'flex flex-col px-4 tablet:px-8'
 
     return (
