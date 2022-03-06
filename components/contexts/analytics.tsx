@@ -1,5 +1,5 @@
 import * as React from 'react'
-import Head from 'next/head'
+import Script from 'next/script'
 import { useRouter } from 'next/router'
 import { pageView, event } from '@/helpers/analytics'
 
@@ -31,22 +31,19 @@ export const AnalyticsProvider = ({ children }: IAnalyticsProvider) => {
     return (
         <AnalyticsContext.Provider value={{ sendEvent: event }}>
             {isProduction && (
-                <Head>
-                    <script key="gtag" async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_ANALYTICS_ID}`} />
-                    <script
-                        key="gtag-config"
-                        dangerouslySetInnerHTML={{
-                            __html: `
-                                window.dataLayer = window.dataLayer || [];
-                                function gtag(){ dataLayer.push(arguments); }
-                                gtag('js', new Date());
-                                gtag('config', '${process.env.NEXT_PUBLIC_ANALYTICS_ID}', {
-                                    page_path: window.location.pathname,
-                                });
-                            `
-                        }}
-                    />
-                </Head>
+                <>
+                    <Script key="gtag" src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_ANALYTICS_ID}`} />
+                    <Script id="gtag-config" key="gtag-config">
+                        {`
+                            window.dataLayer = window.dataLayer || [];
+                            function gtag(){ dataLayer.push(arguments); }
+                            gtag('js', new Date());
+                            gtag('config', '${process.env.NEXT_PUBLIC_ANALYTICS_ID}', {
+                                page_path: window.location.pathname,
+                            });
+                        `}
+                    </Script>
+                </>
             )}
             {children}
         </AnalyticsContext.Provider>
