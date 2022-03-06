@@ -55,7 +55,7 @@ export const ThemeProvider = ({ storageKey = STORAGE_KEY, children }: React.Prop
 }
 
 const ThemeScript = () => (
-    <Script id="theme" key="theme">
+    <Script id="theme" key="theme" strategy="beforeInteractive">
         {`
             (function() {
                 const storageKey = '${STORAGE_KEY}';
