@@ -1,23 +1,21 @@
 import * as React from 'react'
 
-type IconId =
-    | 'icon-brightscript'
-    | 'icon-css'
-    | 'icon-git'
-    | 'icon-github'
-    | 'icon-html'
-    | 'icon-javascript'
-    | 'icon-linkedin'
-    | 'icon-moon'
-    | 'icon-nextjs'
-    | 'icon-nodejs'
-    | 'icon-react'
-    | 'icon-sass'
-    | 'icon-sun'
-    | 'icon-stackoverflow'
-    | 'icon-tailwindcss'
-    | 'icon-twitter'
-    | 'icon-typescript'
+type SkillType =
+    | 'brightscript'
+    | 'css'
+    | 'git'
+    | 'html'
+    | 'javascript'
+    | 'nextjs'
+    | 'nodejs'
+    | 'react'
+    | 'sass'
+    | 'tailwindcss'
+    | 'typescript'
+type SocialType = 'github' | 'linkedin' | 'stackoverflow' | 'twitter'
+type ThemeIconType = 'moon' | 'sun'
+
+export type IconId = `icon-${SkillType | SocialType | ThemeIconType}`
 
 interface ISvgIcon {
     className?: string
