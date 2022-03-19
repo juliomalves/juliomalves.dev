@@ -9,10 +9,10 @@ const twitterHandle = '@juli0malves'
 const Metadata = () => (
     <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="shortcut icon" href="favicon.ico" />
-        <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180" />
-        <link rel="icon" href="favicon-16x16.png" sizes="16x16" type="image/png" />
-        <link rel="icon" href="favicon-32x32.png" sizes="32x32" type="image/png" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+        <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png" />
+        <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png" />
         <link rel="preload" href="/fonts/lato-regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <link rel="preload" href="/fonts/lato-bold.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <link rel="preload" href="/sprite.svg" as="image/svg+xml" crossOrigin="anonymous" />
