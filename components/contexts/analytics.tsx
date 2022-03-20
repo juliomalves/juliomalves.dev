@@ -13,7 +13,11 @@ interface IAnalyticsContext {
     sendEvent: typeof event
 }
 
-const AnalyticsContext = React.createContext<IAnalyticsContext>(null)
+const AnalyticsContext = React.createContext<IAnalyticsContext>({
+    sendEvent: () => {
+        throw new Error('sendEvent must be initialised')
+    }
+})
 
 export const useAnalytics = () => React.useContext<IAnalyticsContext>(AnalyticsContext)
 

@@ -1,5 +1,5 @@
 export const pageView = (url: string) => {
-    window.gtag?.('config', process.env.NEXT_PUBLIC_ANALYTICS_ID, {
+    window.gtag?.('config', process.env.NEXT_PUBLIC_ANALYTICS_ID ?? '', {
         page_path: url
     })
 }

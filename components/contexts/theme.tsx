@@ -13,7 +13,9 @@ interface IThemeContext {
 
 const ThemeContext = React.createContext<IThemeContext>({
     theme: 'light',
-    toggleTheme: undefined
+    toggleTheme: () => {
+        throw new Error('toggleTheme must be initialised')
+    }
 })
 
 interface IThemeProvider {
@@ -25,7 +27,7 @@ export const useTheme = () => React.useContext<IThemeContext>(ThemeContext)
 export const ThemeProvider = ({ storageKey = STORAGE_KEY, children }: React.PropsWithChildren<IThemeProvider> = {}) => {
     const [theme, setTheme] = React.useState(() => {
         if (typeof window === 'undefined') {
-            return undefined
+            return 'light'
         }
         const storedMode = window.localStorage.getItem(storageKey) as Theme
         return !storedMode ? (window.matchMedia(MEDIA_QUERY).matches ? 'dark' : 'light') : storedMode
