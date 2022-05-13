@@ -1,4 +1,6 @@
 const nextJest = require('next/jest')
+const { pathsToModuleNameMapper } = require('ts-jest')
+const { compilerOptions } = require('./tsconfig')
 
 const nextJestConfig = nextJest({ dir: './' })
 
@@ -11,7 +13,7 @@ module.exports = nextJestConfig({
         '^react$': 'preact/compat',
         '^react-dom/test-utils$': 'preact/test-utils',
         '^react-dom$': 'preact/compat',
-        '^@/(.*)': '<rootDir>/$1'
+        ...pathsToModuleNameMapper(compilerOptions.paths, { prefix: '<rootDir>/' })
     },
     collectCoverageFrom: ['<rootDir>/components/**/*.{ts,tsx}', '<rootDir>/helpers/**/*.{ts,tsx}', '<rootDir>/pages/**/*.{ts,tsx}'],
     coverageDirectory: '<rootDir>/tests/coverage',
