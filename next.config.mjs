@@ -6,15 +6,18 @@ const withBundleAnalyzer = nextBundleAnalyzer({
     enabled: process.env.ANALYZE_BUNDLE === 'true'
 })
 
-export default withBundleAnalyzer(
-    withPreact({
-        reactStrictMode: true,
-        swcMinify: true,
-        poweredByHeader: false,
-        webpack: (config, { isServer }) => {
-            const name = isServer ? 'server' : 'client'
-            config.plugins.push(new WebpackBar({ name }))
-            return config
-        }
-    })
-)
+/**
+ * @type {import('next').NextConfig}
+ */
+const config = {
+    reactStrictMode: true,
+    swcMinify: true,
+    poweredByHeader: false,
+    webpack: (config, { isServer }) => {
+        const name = isServer ? 'server' : 'client'
+        config.plugins.push(new WebpackBar({ name }))
+        return config
+    }
+}
+
+export default withBundleAnalyzer(withPreact(config))
