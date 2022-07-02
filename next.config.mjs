@@ -6,9 +6,7 @@ const withBundleAnalyzer = nextBundleAnalyzer({
     enabled: process.env.ANALYZE_BUNDLE === 'true'
 })
 
-/**
- * @type {import('next').NextConfig}
- */
+/** @type {import('next').NextConfig} */
 const config = {
     reactStrictMode: true,
     swcMinify: true,

@@ -4,7 +4,8 @@ const { compilerOptions } = require('./tsconfig')
 
 const nextJestConfig = nextJest({ dir: './' })
 
-module.exports = nextJestConfig({
+/** @type {import('@jest/types').Config.InitialOptions} */
+const config = {
     testEnvironment: 'jsdom',
     setupFilesAfterEnv: ['<rootDir>/tests/global-mocks.ts'],
     moduleFileExtensions: ['js', 'ts', 'tsx', 'json'],
@@ -26,4 +27,6 @@ module.exports = nextJestConfig({
             statements: 80
         }
     }
-})
+}
+
+module.exports = nextJestConfig(config)

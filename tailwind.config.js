@@ -1,7 +1,8 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
 
-module.exports = {
+/** @type {import('tailwindcss').Config} */
+const config = {
     content: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}'],
     safelist: ['dark', 'light'],
     darkMode: 'class',
@@ -22,3 +23,5 @@ module.exports = {
         }
     }
 }
+
+module.exports = config
