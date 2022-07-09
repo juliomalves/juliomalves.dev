@@ -13,6 +13,9 @@
     "url": "https://github.com/juliomalves/juliomalves.dev/issues"
   },
   "homepage": "https://github.com/juliomalves/juliomalves.dev#readme",
+  "engines": {
+      "node": ">=14.19"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
