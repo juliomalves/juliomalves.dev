@@ -26,15 +26,15 @@
     "check": "npm run typecheck && npm run lint"
   },
   "dependencies": {
-    "next": "~12.1.5",
+    "next": "~12.2.2",
     "preact": "~10.9.0",
     "preact-render-to-string": "~5.2.0",
     "react": "npm:@preact/compat@17.0.3",
     "react-dom": "npm:@preact/compat@17.0.3"
   },
   "devDependencies": {
-    "@next/bundle-analyzer": "~12.1.5",
-    "@next/eslint-plugin-next": "~12.1.5",
+    "@next/bundle-analyzer": "~12.2.2",
+    "@next/eslint-plugin-next": "~12.2.2",
     "@testing-library/jest-dom": "~5.16.1",
     "@testing-library/preact": "~3.2.0",
     "@types/gtag.js": "~0.0.10",
@@ -45,7 +45,7 @@
     "@typescript-eslint/parser": "~5.30.3",
     "autoprefixer": "~10.4.0",
     "eslint": "~8.19.0",
-    "eslint-config-next": "~12.1.5",
+    "eslint-config-next": "~12.2.2",
     "eslint-config-prettier": "~8.5.0",
     "eslint-plugin-jsx-a11y": "~6.6.0",
     "eslint-plugin-react": "~7.30.0",
