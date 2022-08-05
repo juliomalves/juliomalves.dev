@@ -13,7 +13,7 @@ const Header = () => {
                 <img
                     alt="Julio Alves"
                     className="w-12 h-auto border-2 border-neon-blue dark:border-green rounded-full"
-                    src="/profile-pic.jpg"
+                    src="/images/profile-pic.jpg"
                     width="48"
                     height="48"
                 />
