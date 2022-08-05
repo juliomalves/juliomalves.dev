@@ -33,7 +33,7 @@ const SvgIcon = ({ className, color = 'currentColor', id, hidden = false, noFill
     return (
         <svg className={classNames} fill={fill} role="img" aria-hidden={hidden}>
             {title && <title>{title}</title>}
-            <use href={`/sprite.svg#${id}`} />
+            <use href={`/images/sprite.svg#${id}`} />
         </svg>
     )
 }
