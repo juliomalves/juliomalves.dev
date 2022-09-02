@@ -17,6 +17,7 @@ const Header = () => {
                     src="/images/profile-pic.jpg"
                     width="48"
                     height="48"
+                    priority={true}
                 />
                 <span className="pl-3 text-neon-blue dark:text-green text-xl font-semibold">juliomalves.dev</span>
             </Link>

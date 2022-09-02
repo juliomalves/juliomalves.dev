@@ -14,6 +14,7 @@ const config = {
         '^react$': 'preact/compat',
         '^react-dom/test-utils$': 'preact/test-utils',
         '^react-dom$': 'preact/compat',
+        '^next/future/image$': 'next/image',
         ...pathsToModuleNameMapper(compilerOptions.paths, { prefix: '<rootDir>/' })
     },
     collectCoverageFrom: ['<rootDir>/components/**/*.{ts,tsx}', '<rootDir>/helpers/**/*.{ts,tsx}', '<rootDir>/pages/**/*.{ts,tsx}'],
