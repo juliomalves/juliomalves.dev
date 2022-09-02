@@ -50,8 +50,7 @@
       "components": ["Link"],
       "specialLink": ["hrefLeft", "hrefRight"],
       "aspects": ["invalidHref", "preferButton"]
-    }],
-    "@next/next/no-img-element": 0
+    }]
   },
   "settings": {
       "react": {
