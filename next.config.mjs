@@ -8,11 +8,8 @@ const withBundleAnalyzer = nextBundleAnalyzer({
 
 /** @type {import('next').NextConfig} */
 const config = {
-    experimental: {
-        images: {
-            allowFutureImage: true,
-            unoptimized: true
-        }
+    images: {
+        unoptimized: true
     },
     reactStrictMode: true,
     swcMinify: true,
