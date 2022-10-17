@@ -3,10 +3,11 @@ import { pageView, event } from '@/helpers/analytics'
 describe('GIVEN pageView()', () => {
     describe('WHEN the gtag global is set', () => {
         it('THEN should call the gtag function with the appropriate params', () => {
+            const originalGtag = global.gtag
             global.gtag = jest.fn()
             pageView('/page-path')
             expect(global.gtag).toHaveBeenCalledWith('config', 'ga-test-id', { page_path: '/page-path' })
-            delete global.gtag
+            global.gtag = originalGtag
         })
     })
 
@@ -21,6 +22,7 @@ describe('GIVEN pageView()', () => {
 describe('GIVEN event()', () => {
     describe('WHEN the gtag global is set', () => {
         it('THEN should call the gtag function with the appropriate params', () => {
+            const originalGtag = global.gtag
             global.gtag = jest.fn()
             event({ action: 'page_view', category: 'event-category', label: 'event-label', value: 1 })
             expect(global.gtag).toHaveBeenCalledWith('event', 'page_view', {
@@ -28,7 +30,7 @@ describe('GIVEN event()', () => {
                 event_label: 'event-label',
                 value: 1
             })
-            delete global.gtag
+            global.gtag = originalGtag
         })
     })
 
