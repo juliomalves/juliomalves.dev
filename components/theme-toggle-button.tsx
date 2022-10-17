@@ -21,7 +21,7 @@ const ThemeToggleButton = () => {
     const { label, icon, iconLabel } = themeOptions[theme]
 
     return (
-        <button className="flex p-2 text-yellow-400 focus-outline hover:glow" onClick={toggleTheme} aria-label={label}>
+        <button className="flex p-2 text-yellow-400 focus-outline hover:drop-shadow-[0_0_12px]" onClick={toggleTheme} aria-label={label}>
             <SvgIcon className="w-5 h-5" id={icon} title={iconLabel} />
         </button>
     )
