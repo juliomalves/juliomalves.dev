@@ -1,6 +1,7 @@
 import * as React from 'react'
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import PageWrapper from '@/components/page-wrapper'
 import SkillItem from '@/components/skill-item'
 import TimelineItem from '@/components/timeline-item'
 import Link from '@/components/link'
@@ -15,7 +16,7 @@ const HomePage: NextPage = () => {
             <Head>
                 <link rel="canonical" href="https://juliomalves.dev" />
             </Head>
-            <main className="grid-wrapper">
+            <PageWrapper>
                 <h1 className="px-4 tablet:px-8">
                     Hello, I&apos;m <span className="inline-block">Julio Alves</span>
                 </h1>
@@ -129,7 +130,7 @@ const HomePage: NextPage = () => {
                         . You can also check out my social media presence following the links below.
                     </p>
                 </section>
-            </main>
+            </PageWrapper>
         </>
     )
 }
