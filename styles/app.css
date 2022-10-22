@@ -54,13 +54,7 @@
 
 @layer utilities {
     .grid-wrapper {
-        @apply grid grid-cols-[1fr,min(75ch,100%),1fr];
-    }
-    .grid-wrapper > * {
-        grid-column: 2;
-    }
-    .min-h-content {
-        @apply min-h-[calc(100vh-13.25rem)];
+        @apply grid grid-cols-[1fr,min(75ch,100%),1fr] [&>*]:col-[2] min-h-[calc(100vh-13.25rem)];
     }
     .focus-outline {
         @apply focus:outline-none focus:ring-2 focus:ring-neon-blue dark:focus:ring-green;

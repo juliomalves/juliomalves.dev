@@ -10,7 +10,7 @@ const Page404: NextPage = () => {
             <Head>
                 <title>{`Page Not Found - ${title}`}</title>
             </Head>
-            <main className="grid-wrapper min-h-content">
+            <main className="grid-wrapper">
                 <section className="flex flex-col items-center place-content-center px-4 tablet:px-8" aria-labelledby="404">
                     <h1 id="404">Page Not Found</h1>
                     <p>

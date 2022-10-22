@@ -15,7 +15,7 @@ const HomePage: NextPage = () => {
             <Head>
                 <link rel="canonical" href="https://juliomalves.dev" />
             </Head>
-            <main className="grid-wrapper min-h-content">
+            <main className="grid-wrapper">
                 <h1 className="px-4 tablet:px-8">
                     Hello, I&apos;m <span className="inline-block">Julio Alves</span>
                 </h1>
