@@ -1,7 +1,9 @@
+'use client'
+
 import * as React from 'react'
 import Script from 'next/script'
-import { useRouter } from 'next/router'
-import { pageView, event } from '@/helpers/analytics'
+// import { useRouter } from 'next/navigation'
+import { event } from '@/helpers/analytics'
 
 const isProduction = process.env.NODE_ENV === 'production'
 
@@ -22,15 +24,15 @@ const AnalyticsContext = React.createContext<IAnalyticsContext>({
 export const useAnalytics = () => React.useContext<IAnalyticsContext>(AnalyticsContext)
 
 export const AnalyticsProvider = ({ children }: IAnalyticsProvider) => {
-    const { events } = useRouter()
+    // const { events } = useRouter()
 
-    React.useEffect(() => {
-        events.on('routeChangeComplete', pageView)
+    // React.useEffect(() => {
+    //     events.on('routeChangeComplete', pageView)
 
-        return () => {
-            events.off('routeChangeComplete', pageView)
-        }
-    }, [events])
+    //     return () => {
+    //         events.off('routeChangeComplete', pageView)
+    //     }
+    // }, [events])
 
     return (
         <AnalyticsContext.Provider value={{ sendEvent: event }}>

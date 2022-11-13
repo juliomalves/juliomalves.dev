@@ -7,6 +7,9 @@ const withBundleAnalyzer = nextBundleAnalyzer({
 
 /** @type {import('next').NextConfig} */
 const config = {
+    experimental: {
+        appDir: true
+    },
     images: {
         unoptimized: true
     },
