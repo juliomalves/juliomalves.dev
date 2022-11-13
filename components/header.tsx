@@ -1,7 +1,7 @@
 import * as React from 'react'
 import Link from '@/components/link'
 import dynamic from 'next/dynamic'
-import Image from 'next/future/image'
+import Image from 'next/image'
 
 const ThemeToggleButton = dynamic(() => import('@/components/theme-toggle-button'), {
     ssr: false

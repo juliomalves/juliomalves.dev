@@ -1,4 +1,3 @@
-import withPreact from 'next-plugin-preact'
 import WebpackBar from 'webpackbar'
 import nextBundleAnalyzer from '@next/bundle-analyzer'
 
@@ -21,4 +20,4 @@ const config = {
     }
 }
 
-export default withBundleAnalyzer(withPreact(config))
+export default withBundleAnalyzer(config)
