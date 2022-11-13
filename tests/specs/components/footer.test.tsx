@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { render, screen, within } from '@testing-library/preact'
+import { render, screen, within } from '@testing-library/react'
 import Footer from '@/components/footer'
 
 describe('GIVEN a <Footer />', () => {

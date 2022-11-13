@@ -11,13 +11,9 @@ const config = {
     moduleFileExtensions: ['js', 'ts', 'tsx', 'json'],
     testMatch: ['<rootDir>/tests/specs/**/*.test.{ts,tsx}'],
     moduleNameMapper: {
-        '^react$': 'preact/compat',
-        '^react-dom/test-utils$': 'preact/test-utils',
-        '^react-dom$': 'preact/compat',
-        '^next/future/image$': 'next/image',
         ...pathsToModuleNameMapper(compilerOptions.paths, { prefix: '<rootDir>/' })
     },
-    collectCoverageFrom: ['<rootDir>/components/**/*.{ts,tsx}', '<rootDir>/helpers/**/*.{ts,tsx}', '<rootDir>/pages/**/*.{ts,tsx}'],
+    collectCoverageFrom: ['<rootDir>/components/**/*.{ts,tsx}', '<rootDir>/helpers/**/*.{ts,tsx}', '<rootDir>/app/**/*.{ts,tsx}'],
     coverageDirectory: '<rootDir>/tests/coverage',
     coverageReporters: ['text-summary', 'lcov', 'html'],
     coverageThreshold: {
