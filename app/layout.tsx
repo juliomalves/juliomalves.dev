@@ -8,6 +8,9 @@ import '@/styles/app.css'
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en">
+            <head>
+                <script id="theme" src="/scripts/theme.js"></script>
+            </head>
             <body>
                 <AnalyticsProvider>
                     <Header />
