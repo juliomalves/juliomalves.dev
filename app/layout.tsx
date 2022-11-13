@@ -7,7 +7,11 @@ import '@/styles/app.css'
 
 const isProduction = process.env.NODE_ENV === 'production'
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+type IRootLayout = {
+    children: React.ReactNode
+}
+
+const RootLayout = ({ children }: IRootLayout) => {
     return (
         <html lang="en">
             <head>
@@ -36,3 +40,5 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </html>
     )
 }
+
+export default RootLayout
