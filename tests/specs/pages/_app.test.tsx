@@ -1,6 +1,6 @@
 import * as React from 'react'
 import type { Router } from 'next/router'
-import { render, screen } from '@testing-library/preact'
+import { render, screen } from '@testing-library/react'
 import App from '@/pages/_app'
 import { mockedRouter } from '@/tests/utils/with-router-context'
 import * as analytics from '@/helpers/analytics'

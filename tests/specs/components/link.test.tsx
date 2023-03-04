@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { render, screen, within } from '@testing-library/preact'
+import { render, screen, within } from '@testing-library/react'
 import Link from '@/components/link'
 
 const renderComponent = ({ href = '/', label = 'Link label', external = false } = {}) =>
