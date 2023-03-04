@@ -19,10 +19,8 @@ const Link = ({ children, className, external = false, href, label }: React.Prop
     }
 
     return (
-        <NextLink href={href}>
-            <a className={className} aria-label={label}>
-                {children}
-            </a>
+        <NextLink href={href} className={className} aria-label={label}>
+            {children}
         </NextLink>
     )
 }
