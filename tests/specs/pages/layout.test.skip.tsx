@@ -14,6 +14,8 @@ const renderComponent = ({ Component }: any) =>
         </RootLayout>
     )
 
+// Skipping root layout test due to `metadata` export causing an isue in JSDOM
+// See https://github.com/vercel/next.js/issues/47299
 describe.skip('GIVEN an <RootLayout />', () => {
     describe('WHEN provided with a component and page props', () => {
         it('THEN should render its children components', () => {

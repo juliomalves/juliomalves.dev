@@ -7,12 +7,6 @@ import Footer from '@/components/footer'
 
 import '@/styles/app.css'
 
-const isProduction = process.env.NODE_ENV === 'production'
-
-type IRootLayout = {
-    children: React.ReactNode
-}
-
 const authorName = 'Julio Alves'
 const title = `${authorName} | Software Engineer`
 const description = 'Frontend developer experienced in building web-based applications for all kinds of devices.'
@@ -66,6 +60,12 @@ const latoFont = localFont({
     ],
     display: 'optional'
 })
+
+const isProduction = process.env.NODE_ENV === 'production'
+
+type IRootLayout = {
+    children: React.ReactNode
+}
 
 const RootLayout = ({ children }: IRootLayout) => {
     return (

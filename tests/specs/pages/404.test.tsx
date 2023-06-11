@@ -2,7 +2,7 @@ import * as React from 'react'
 import { render, screen, within } from '@testing-library/react'
 import Page404 from '@/app/not-found'
 
-describe.skip('GIVEN a <Page404 />', () => {
+describe('GIVEN a <Page404 />', () => {
     it('THEN should render its children components', () => {
         render(<Page404 />)
         const main = within(screen.getByRole('main'))
