@@ -31,21 +31,6 @@
     ::selection {
         @apply text-gray-100 bg-neon-blue dark:bg-green;
     }
-
-    @font-face {
-        font-family: Lato;
-        src: url(/fonts/lato-bold.woff2) format('woff2');
-        font-weight: 700;
-        font-style: normal;
-        font-display: optional;
-    }
-    @font-face {
-        font-family: Lato;
-        src: url(/fonts/lato-regular.woff2) format('woff2');
-        font-weight: 400;
-        font-style: normal;
-        font-display: optional;
-    }
 }
 
 @tailwind components;

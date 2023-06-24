@@ -13,7 +13,7 @@ const config = {
     moduleNameMapper: {
         ...pathsToModuleNameMapper(compilerOptions.paths, { prefix: '<rootDir>/' })
     },
-    collectCoverageFrom: ['<rootDir>/components/**/*.{ts,tsx}', '<rootDir>/helpers/**/*.{ts,tsx}', '<rootDir>/pages/**/*.{ts,tsx}'],
+    collectCoverageFrom: ['<rootDir>/components/**/*.{ts,tsx}', '<rootDir>/helpers/**/*.{ts,tsx}', '<rootDir>/app/**/*.{ts,tsx}'],
     coverageDirectory: '<rootDir>/tests/coverage',
     coverageReporters: ['text-summary', 'lcov', 'html'],
     coverageThreshold: {

@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { render, screen, within } from '@testing-library/react'
-import Page404 from '@/pages/404'
+import Page404 from '@/app/not-found'
 
 describe('GIVEN a <Page404 />', () => {
     it('THEN should render its children components', () => {

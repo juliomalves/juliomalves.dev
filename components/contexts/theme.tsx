@@ -1,3 +1,5 @@
+'use client'
+
 import * as React from 'react'
 
 const STORAGE_KEY = 'jma-theme'
