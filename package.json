@@ -34,7 +34,7 @@
     "react-dom": "~18.2.0"
   },
   "devDependencies": {
-    "@netlify/plugin-nextjs": "~4.28.4-appdir.0",
+    "@netlify/plugin-nextjs": "4.29.5-appdir.0",
     "@next/bundle-analyzer": "~13.4.7",
     "@next/eslint-plugin-next": "~13.4.7",
     "@testing-library/jest-dom": "~5.16.1",
