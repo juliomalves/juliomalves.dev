@@ -3,9 +3,12 @@
 import * as React from 'react'
 import Link from '@/components/link'
 import Image from 'next/image'
+import dynamic from 'next/dynamic'
 import { ThemeProvider } from '@/components/contexts/theme'
-import ClientOnly from '@/components/client-only'
-import ThemeToggleButton from '@/components/theme-toggle-button'
+
+const ThemeToggleButton = dynamic(() => import('@/components/theme-toggle-button'), {
+    ssr: false
+})
 
 const Header = () => {
     return (
@@ -22,9 +25,7 @@ const Header = () => {
                 <span className="pl-3 text-neon-blue dark:text-green text-xl font-semibold">juliomalves.dev</span>
             </Link>
             <ThemeProvider>
-                <ClientOnly>
-                    <ThemeToggleButton />
-                </ClientOnly>
+                <ThemeToggleButton />
             </ThemeProvider>
         </header>
     )
