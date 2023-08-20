@@ -1,4 +1,4 @@
-import '@testing-library/jest-dom/extend-expect'
+import '@testing-library/jest-dom'
 import { mockedRouter } from '@/tests/utils/with-router-context'
 
 // Mock `window.matchMedia()` which is not implemented by JSDOM.
