@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "@next/bundle-analyzer": "~13.5.2",
-    "@next/eslint-plugin-next": "~13.5.2",
+    "@next/eslint-plugin-next": "~14.0.0",
     "@testing-library/jest-dom": "~6.1.2",
     "@testing-library/react": "~14.0.0",
     "@types/gtag.js": "0.0.12",
