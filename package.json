@@ -20,7 +20,7 @@
     "dev": "next dev",
     "build": "next build",
     "build:analyze": "ANALYZE_BUNDLE=true npm run build",
-    "export": "next build && next export",
+    "export": "next build",
     "start": "next start",
     "typecheck": "tsc --pretty --noEmit",
     "format": "prettier --write \"**/*.{js,ts,tsx}\"",
