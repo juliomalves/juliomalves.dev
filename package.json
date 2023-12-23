@@ -61,6 +61,6 @@
     "ts-jest": "~29.1.1",
     "typescript": "~5.3.3",
     "webpack": "~5.89.0",
-    "webpackbar": "~5.0.0-3"
+    "webpackbar": "~6.0.0"
   }
 }
