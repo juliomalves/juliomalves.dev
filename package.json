@@ -37,7 +37,7 @@
     "@next/eslint-plugin-next": "~14.2.2",
     "@testing-library/jest-dom": "~6.4.1",
     "@testing-library/react": "~15.0.2",
-    "@types/gtag.js": "0.0.12",
+    "@types/gtag.js": "~0.0.19",
     "@types/jest": "~29.5.12",
     "@types/node": "~20.12.2",
     "@types/react": "~18.3.0",
