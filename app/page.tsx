@@ -17,7 +17,7 @@ const HomePage = () => {
             <section className={sectionClassName} aria-label="Summary">
                 <p>
                     I&apos;m a <strong>software engineer</strong> experienced in building web apps for all kinds of devices. I&apos;m based
-                    in London, UK where I work as a Senior Front-end Engineer at ITV.
+                    in London, UK where I work as a Lead Front-end Engineer at ITV.
                 </p>
                 <p>
                     My focus right now is <strong>React.js</strong>, using Next.js and TypeScript. I also have extensive experience with
@@ -83,6 +83,12 @@ const HomePage = () => {
             <section className={sectionClassName} aria-labelledby="timeline">
                 <h2 id="timeline">Timeline</h2>
                 <ul>
+                    <TimelineItem type="work" date="2023-10-16" title="Promoted to Tech Lead">
+                        <p>
+                            Got promoted to a Tech Lead position at ITV. Currently working across several teams to support ITVX web app
+                            development.
+                        </p>
+                    </TimelineItem>
                     <TimelineItem type="work" date="2019-09-25" title="Joined ITV">
                         <p>Got offered and accepted a senior position at ITV. Currently building React websites and a React Native app.</p>
                     </TimelineItem>

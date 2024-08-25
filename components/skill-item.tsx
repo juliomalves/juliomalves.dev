@@ -1,11 +1,10 @@
 import * as React from 'react'
-import type { GetComponentProps } from '@/helpers/types'
 import type SvgIcon from '@/components/svg-icon'
 
 interface ISkillItem {
     hoverClassName: string
     label: string
-    icon: React.ReactElement<GetComponentProps<typeof SvgIcon>>
+    icon: React.ReactElement<React.ComponentProps<typeof SvgIcon>>
 }
 
 const SkillItem = ({ hoverClassName, label, icon }: ISkillItem) => {
