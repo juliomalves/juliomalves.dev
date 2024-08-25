@@ -11,7 +11,7 @@
         X-Frame-Options = "DENY"
         X-XSS-Protection = "1; mode=block"
         X-Content-Type-Options = "nosniff"
-        Content-Security-Policy = "script-src 'self' 'sha256-uQA5qY7jPYv5wIoh0pyopkWmn6AbZwDg3hu3+vpYexA=' 'sha256-5kuXmh3p8P/r6hh4pKk6Ky9FIN+5A4nBZqV94KFTs+g=' www.googletagmanager.com *.netlify.app; object-src 'none'"
+        Content-Security-Policy = "script-src 'self' 'unsafe-inline' 'sha256-uQA5qY7jPYv5wIoh0pyopkWmn6AbZwDg3hu3+vpYexA=' 'sha256-5kuXmh3p8P/r6hh4pKk6Ky9FIN+5A4nBZqV94KFTs+g=' www.googletagmanager.com *.netlify.app; object-src 'none'"
 
 [[headers]]
     for = "/fonts/*"
