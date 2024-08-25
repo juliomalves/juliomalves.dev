@@ -1,7 +1,10 @@
+'use client'
+
 import * as React from 'react'
 import Link from '@/components/link'
-import dynamic from 'next/dynamic'
 import Image from 'next/image'
+import dynamic from 'next/dynamic'
+import { ThemeProvider } from '@/components/contexts/theme'
 
 const ThemeToggleButton = dynamic(() => import('@/components/theme-toggle-button'), {
     ssr: false
@@ -21,7 +24,9 @@ const Header = () => {
                 />
                 <span className="pl-3 text-neon-blue dark:text-green text-xl font-semibold">juliomalves.dev</span>
             </Link>
-            <ThemeToggleButton />
+            <ThemeProvider>
+                <ThemeToggleButton />
+            </ThemeProvider>
         </header>
     )
 }

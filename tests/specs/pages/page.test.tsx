@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { render, screen, within } from '@testing-library/react'
-import HomePage from '@/pages/index'
+import HomePage from '@/app/page'
 
 describe('GIVEN a <HomePage />', () => {
     it('THEN should render its children components', () => {

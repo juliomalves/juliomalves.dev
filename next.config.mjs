@@ -10,8 +10,6 @@ const config = {
     images: {
         unoptimized: true
     },
-    reactStrictMode: true,
-    swcMinify: true,
     poweredByHeader: false
 }
 
