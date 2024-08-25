@@ -1,5 +1,4 @@
 import '@testing-library/jest-dom'
-import { mockedRouter } from '@/tests/utils/with-router-context'
 
 // Mock `window.matchMedia()` which is not implemented by JSDOM.
 // https://jestjs.io/docs/en/manual-mocks#mocking-methods-which-are-not-implemented-in-jsdom
@@ -16,10 +15,3 @@ Object.defineProperty(window, 'matchMedia', {
         dispatchEvent: jest.fn()
     }))
 })
-
-jest.mock('next/router', () => ({
-    ...mockedRouter,
-    useRouter() {
-        return mockedRouter
-    }
-}))
