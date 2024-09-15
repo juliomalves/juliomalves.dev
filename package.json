@@ -37,7 +37,7 @@
     "@next/bundle-analyzer": "~14.2.2",
     "@next/eslint-plugin-next": "~14.2.2",
     "@testing-library/dom": "~10.4.0",
-    "@testing-library/jest-dom": "~6.4.1",
+    "@testing-library/jest-dom": "~6.5.0",
     "@testing-library/react": "~16.0.0",
     "@types/gtag.js": "~0.0.19",
     "@types/jest": "~29.5.12",
