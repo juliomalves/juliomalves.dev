@@ -1,7 +1,7 @@
-import * as React from 'react'
+import type { ReactNode } from 'react'
 
 interface IPageWrapper {
-    children: React.ReactNode
+    children: ReactNode
 }
 
 const PageWrapper = ({ children }: IPageWrapper) => {

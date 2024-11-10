@@ -1,6 +1,5 @@
 'use client'
 
-import * as React from 'react'
 import Link from '@/components/link'
 import Image from 'next/image'
 import dynamic from 'next/dynamic'

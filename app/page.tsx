@@ -1,4 +1,3 @@
-import * as React from 'react'
 import PageWrapper from '@/components/page-wrapper'
 import SkillItem from '@/components/skill-item'
 import TimelineItem from '@/components/timeline-item'
