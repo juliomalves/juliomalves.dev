@@ -1,4 +1,3 @@
-import * as React from 'react'
 import PageWrapper from '@/components/page-wrapper'
 import Link from '@/components/link'
 

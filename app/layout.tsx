@@ -1,4 +1,4 @@
-import * as React from 'react'
+import type { ReactNode } from 'react'
 import Script from 'next/script'
 import localFont from 'next/font/local'
 import type { Metadata } from 'next'
@@ -64,7 +64,7 @@ const latoFont = localFont({
 const isProduction = process.env.NODE_ENV === 'production'
 
 type IRootLayout = {
-    children: React.ReactNode
+    children: ReactNode
 }
 
 const RootLayout = ({ children }: IRootLayout) => {

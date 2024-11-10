@@ -1,4 +1,4 @@
-import * as React from 'react'
+import type { PropsWithChildren } from 'react'
 import Emoji from '@/components/emoji'
 
 type TimelineItemType = 'education' | 'travel' | 'work'
@@ -15,7 +15,7 @@ const typeToSymbol: Record<TimelineItemType, string> = {
     work: '👨‍💻'
 }
 
-const TimelineItem = ({ children, date, title, type }: React.PropsWithChildren<ITimelineItem>) => {
+const TimelineItem = ({ children, date, title, type }: PropsWithChildren<ITimelineItem>) => {
     const dateFormat = new Intl.DateTimeFormat('en-GB', { year: 'numeric', month: 'long' })
     const dateString = dateFormat.format(new Date(date))
     const symbol = typeToSymbol[type]

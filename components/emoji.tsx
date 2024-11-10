@@ -1,5 +1,3 @@
-import * as React from 'react'
-
 interface EmojiProps {
     label: string
     symbol: string

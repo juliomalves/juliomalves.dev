@@ -1,4 +1,3 @@
-import * as React from 'react'
 import Link from '@/components/link'
 import SvgIcon from '@/components/svg-icon'
 import type { IconId } from '@/components/svg-icon'

@@ -1,6 +1,5 @@
 'use client'
 
-import * as React from 'react'
 import type { Theme } from '@/components/contexts/theme'
 import { useTheme } from '@/components/contexts/theme'
 import SvgIcon from '@/components/svg-icon'

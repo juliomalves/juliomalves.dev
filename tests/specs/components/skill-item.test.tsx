@@ -1,4 +1,3 @@
-import * as React from 'react'
 import { render, screen } from '@testing-library/react'
 import SkillItem from '@/components/skill-item'
 import SvgIcon from '@/components/svg-icon'
