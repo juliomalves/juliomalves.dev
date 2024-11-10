@@ -5,6 +5,17 @@ updates:
       schedule:
           interval: 'weekly'
           day: 'friday'
+      groups:
+          typescript-eslint:
+              applies-to: version-updates
+              patterns:
+                  - "@typescript-eslint/*"
+          next:
+              applies-to: version-updates
+              patterns:
+                  - "next"
+                  - "eslint-config-next"
+                  - "@next/*"
       open-pull-requests-limit: 10
       ignore:
           - dependency-name: '*'
