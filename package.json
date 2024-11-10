@@ -29,13 +29,13 @@
   },
   "dependencies": {
     "next": "~15.0.3",
-    "react": "~18.3.0",
+    "react": "~18.3.1",
     "react-dom": "~18.3.1"
   },
   "devDependencies": {
     "@netlify/plugin-nextjs": "~5.8.0",
-    "@next/bundle-analyzer": "~14.2.2",
-    "@next/eslint-plugin-next": "~14.2.2",
+    "@next/bundle-analyzer": "~15.0.3",
+    "@next/eslint-plugin-next": "~15.0.3",
     "@testing-library/dom": "~10.4.0",
     "@testing-library/jest-dom": "~6.6.2",
     "@testing-library/react": "~16.0.0",
@@ -48,7 +48,7 @@
     "@typescript-eslint/parser": "~8.13.0",
     "autoprefixer": "~10.4.0",
     "eslint": "~8.57.0",
-    "eslint-config-next": "~14.2.2",
+    "eslint-config-next": "~15.0.3",
     "eslint-config-prettier": "~9.1.0",
     "eslint-plugin-jsx-a11y": "~6.10.0",
     "eslint-plugin-react": "~7.37.0",
