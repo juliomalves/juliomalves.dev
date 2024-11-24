@@ -6,16 +6,27 @@ updates:
           interval: 'weekly'
           day: 'friday'
       groups:
-          typescript-eslint:
+          eslint:
               applies-to: version-updates
               patterns:
-                  - "@typescript-eslint/*"
+                  - "eslint"
+                  - "@eslint/js"
+          react:
+              applies-to: version-updates
+              patterns:
+                  - "react"
+                  - "react-dom"
           next:
               applies-to: version-updates
               patterns:
                   - "next"
                   - "eslint-config-next"
                   - "@next/*"
+          jest:
+              applies-to: version-updates
+              patterns:
+                  - "jest"
+                  - "jest-environment-jsdom"
       open-pull-requests-limit: 10
       ignore:
           - dependency-name: '*'
