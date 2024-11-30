@@ -13,6 +13,8 @@ describe('GIVEN a <Footer />', () => {
         expect(footer.getByRole('img', { name: 'Stack Overflow logo' })).toBeInTheDocument()
         expect(footer.getByLabelText('LinkedIn')).toHaveAttribute('href', 'https://www.linkedin.com/in/juliomalves')
         expect(footer.getByRole('img', { name: 'LinkedIn logo' })).toBeInTheDocument()
+        expect(footer.getByLabelText('Buy me a Coffee')).toHaveAttribute('href', 'https://buymeacoffee.com/juliomalves')
+        expect(footer.getByRole('img', { name: 'Buy me a Coffee logo' })).toBeInTheDocument()
         expect(footer.getByText(/^Julio Alves © \d{4}$/)).toBeInTheDocument()
     })
 })

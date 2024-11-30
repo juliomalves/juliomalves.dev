@@ -10,7 +10,7 @@ type SkillType =
     | 'sass'
     | 'tailwindcss'
     | 'typescript'
-type SocialType = 'github' | 'linkedin' | 'stackoverflow' | 'twitter'
+type SocialType = 'github' | 'linkedin' | 'stackoverflow' | 'twitter' | 'buymeacoffee'
 type ThemeIconType = 'moon' | 'sun'
 
 export type IconId = `icon-${SkillType | SocialType | ThemeIconType}`

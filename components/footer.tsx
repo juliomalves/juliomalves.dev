@@ -42,6 +42,12 @@ const Footer = () => {
                     iconId="icon-linkedin"
                     iconTitle="LinkedIn logo"
                 />
+                <FooterLisItem
+                    href="https://buymeacoffee.com/juliomalves"
+                    label="Buy me a Coffee"
+                    iconId="icon-buymeacoffee"
+                    iconTitle="Buy me a Coffee logo"
+                />
             </ul>
             <p className="text-center text-sm">Julio Alves © {currentYear}</p>
         </footer>
