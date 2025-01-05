@@ -25,29 +25,44 @@ interface IThemeProvider {
 
 export const useTheme = () => React.useContext<IThemeContext>(ThemeContext)
 
+const subscribeToLocalStorage = (callback: () => void) => {
+    window.addEventListener('storage', callback)
+    return () => {
+        window.removeEventListener('storage', callback)
+    }
+}
+
+const subscribeToMediaQuery = (callback: () => void) => {
+    const mediaQueryList = window.matchMedia(MEDIA_QUERY)
+    mediaQueryList.addEventListener('change', callback)
+    return () => {
+        mediaQueryList.removeEventListener('change', callback)
+    }
+}
+
 export const ThemeProvider = ({ storageKey = STORAGE_KEY, children }: React.PropsWithChildren<IThemeProvider> = {}) => {
-    const [theme, setTheme] = React.useState(() => {
-        if (typeof window === 'undefined') {
-            return 'light'
-        }
-        const storedMode = window.localStorage.getItem(storageKey) as Theme
-        return !storedMode ? (window.matchMedia(MEDIA_QUERY).matches ? 'dark' : 'light') : storedMode
-    })
+    const themeFromLocalStorage = React.useSyncExternalStore(
+        subscribeToLocalStorage,
+        () => localStorage.getItem(storageKey) as Theme | null,
+        () => null
+    )
+    const themeFromMediaQuery = React.useSyncExternalStore(
+        subscribeToMediaQuery,
+        () => (window.matchMedia(MEDIA_QUERY).matches ? 'dark' : 'light') as Theme,
+        () => 'light' as Theme
+    )
+    const theme = themeFromLocalStorage ?? themeFromMediaQuery
 
-    const toggleTheme = () => setTheme(theme === 'dark' ? 'light' : 'dark')
+    const toggleTheme = () => {
+        const newTheme = theme === 'dark' ? 'light' : 'dark'
+        localStorage.setItem(storageKey, newTheme)
+        window.dispatchEvent(new Event('storage'))
+    }
 
     React.useEffect(() => {
-        const mediaQueryList = window.matchMedia(MEDIA_QUERY)
-        const handleChange = (ev: MediaQueryListEvent) => setTheme(ev.matches ? 'dark' : 'light')
-        mediaQueryList.addEventListener('change', handleChange)
-        return () => mediaQueryList.removeEventListener('change', handleChange)
-    }, [])
-
-    React.useEffect(() => {
-        window.localStorage.setItem(storageKey, theme)
         document.documentElement.classList.add(theme)
         document.documentElement.classList.remove(theme === 'dark' ? 'light' : 'dark')
-    }, [theme, storageKey])
+    }, [theme])
 
-    return <ThemeContext.Provider value={{ toggleTheme, theme }}>{children}</ThemeContext.Provider>
+    return <ThemeContext value={{ toggleTheme, theme }}>{children}</ThemeContext>
 }
