@@ -5,7 +5,7 @@ interface IPageWrapper {
 }
 
 const PageWrapper = ({ children }: IPageWrapper) => {
-    return <main className="grid grid-cols-[1fr,min(75ch,100%),1fr] [&>*]:col-[2] min-h-[calc(100vh-13.25rem)]">{children}</main>
+    return <main className="grid grid-cols-[1fr_min(75ch,100%)_1fr] *:col-[2] min-h-[calc(100vh-13.25rem)]">{children}</main>
 }
 
 export default PageWrapper
