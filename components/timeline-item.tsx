@@ -28,7 +28,7 @@ const TimelineItem = ({ children, date, title, type }: PropsWithChildren<ITimeli
                     {dateString}
                 </time>
             </div>
-            <div className="flex flex-col pl-8 text-gray-800 dark:text-gray-400 relative -z-[1] before:bg-gray-800 dark:before:bg-gray-400 before:h-full before:w-[2px] before:absolute before:left-[0.45em]">
+            <div className="flex flex-col pl-8 text-gray-800 dark:text-gray-400 relative -z-1 before:bg-gray-800 dark:before:bg-gray-400 before:h-full before:w-[2px] before:absolute before:left-[0.45em]">
                 <h3 className="text-text-midnight dark:text-gray-100">
                     {title} {<Emoji label={type} symbol={symbol} />}
                 </h3>
