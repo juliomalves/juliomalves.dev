@@ -37,6 +37,7 @@
     "@netlify/plugin-nextjs": "~5.9.0",
     "@next/bundle-analyzer": "~15.1.0",
     "@next/eslint-plugin-next": "~15.1.0",
+    "@tailwindcss/postcss": "~4.0.0",
     "@testing-library/dom": "~10.4.0",
     "@testing-library/jest-dom": "~6.6.2",
     "@testing-library/react": "~16.2.0",
