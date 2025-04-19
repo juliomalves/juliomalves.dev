@@ -61,7 +61,7 @@
     "prettier": "~3.5.3",
     "scheduler": "0.26.0",
     "tailwindcss": "^4.0.0",
-    "ts-jest": "~29.2.2",
+    "ts-jest": "~29.3.2",
     "typescript": "~5.8.2",
     "typescript-eslint": "~8.30.1",
     "webpack": "~5.98.0"
