@@ -27,7 +27,12 @@ updates:
               patterns:
                   - "jest"
                   - "jest-environment-jsdom"
-      open-pull-requests-limit: 10
+          tailwindcss:
+              applies-to: version-updates
+              patterns:
+                  - "tailwindcss"
+                  - "@tailwindcss/*"
+      open-pull-requests-limit: 20
       ignore:
           - dependency-name: '*'
             update-types: ['version-update:semver-patch']
