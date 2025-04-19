@@ -59,7 +59,7 @@
     "jest-environment-jsdom": "~29.7.0",
     "postcss": "~8.5.1",
     "prettier": "~3.5.3",
-    "scheduler": "0.25.0",
+    "scheduler": "0.26.0",
     "tailwindcss": "^4.0.0",
     "ts-jest": "~29.2.2",
     "typescript": "~5.8.2",
