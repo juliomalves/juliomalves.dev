@@ -52,7 +52,7 @@
     "eslint-config-prettier": "~10.1.2",
     "eslint-plugin-jsx-a11y": "~6.10.0",
     "eslint-plugin-react": "~7.37.0",
-    "eslint-plugin-react-hooks": "~5.2.0",
+    "eslint-plugin-react-hooks": "~7.0.0",
     "eslint-plugin-testing-library": "~7.5.2",
     "identity-obj-proxy": "~3.0.0",
     "jest": "~30.0.0",
