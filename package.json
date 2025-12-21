@@ -41,7 +41,6 @@
     "@testing-library/dom": "~10.4.0",
     "@testing-library/jest-dom": "~6.9.1",
     "@testing-library/react": "~16.3.0",
-    "@types/eslint__js": "~9.14.0",
     "@types/gtag.js": "~0.0.19",
     "@types/jest": "~30.0.0",
     "@types/node": "~25.0.1",
