@@ -33,7 +33,7 @@
     "react-dom": "~19.2.1"
   },
   "devDependencies": {
-    "@eslint/js": "~9.39.2",
+    "@eslint/js": "~10.0.1",
     "@netlify/plugin-nextjs": "~5.15.1",
     "@next/bundle-analyzer": "~16.1.0",
     "@next/eslint-plugin-next": "~16.1.0",
@@ -46,7 +46,7 @@
     "@types/node": "~25.2.3",
     "@types/react": "~19.1.1",
     "@types/react-dom": "~19.1.2",
-    "eslint": "~9.39.2",
+    "eslint": "~10.0.0",
     "eslint-config-next": "~16.1.0",
     "eslint-config-prettier": "~10.1.2",
     "eslint-plugin-jsx-a11y": "~6.10.0",
