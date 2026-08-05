@@ -28,7 +28,7 @@
     "check": "npm run typecheck && npm run lint"
   },
   "dependencies": {
-    "next": "~16.2.6",
+    "next": "~16.3.0",
     "react": "~19.2.1",
     "react-dom": "~19.2.1"
   },
@@ -56,7 +56,7 @@
     "identity-obj-proxy": "~3.0.0",
     "jest": "~30.4.1",
     "jest-environment-jsdom": "~30.4.1",
-    "postcss": "~8.5.10",
+    "postcss": "~8.5.23",
     "prettier": "~3.9.5",
     "scheduler": "0.27.0",
     "tailwindcss": "~4.3.0",
